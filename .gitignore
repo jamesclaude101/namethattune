@@ -1,0 +1,10 @@
+node_modules/
+api/local.settings.json
+.env
+*.log
+.DS_Store
+Thumbs.db
+bin/
+obj/
+.vscode/
+.azure/

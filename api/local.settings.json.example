@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "",
+    "COSMOS_CONNECTION_STRING": "",
+    "COSMOS_DATABASE": "namethattune",
+    "COSMOS_CONTAINER": "rooms"
+  }
+}

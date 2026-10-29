@@ -1,0 +1,4 @@
+*.md
+.vscode
+local.settings.json
+test

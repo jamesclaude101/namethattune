@@ -1,0 +1,12 @@
+{
+  "name": "namethattune-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Game API for Name That Tune. Server-authoritative: it owns the question bank, the clock and the scoring.",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@azure/cosmos": "^4.1.1"
+  }
+}

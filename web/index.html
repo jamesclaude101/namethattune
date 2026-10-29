@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Name That Tune</title>
+<meta name="description" content="Lyrics trivia from 1985 to now. One screen, up to six phones.">
+<meta name="theme-color" content="#150C22">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&family=Space+Mono:wght@700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main id="view" class="view"></main>
+
+<template id="t-landing">
+  <section class="pane center">
+    <div class="hero">
+      <p class="eyebrow">Lyrics trivia &middot; 1985 to now</p>
+      <h1>Name <em>That</em> Tune</h1>
+      <p class="lede">You know the words. The question is whether you know you know them.</p>
+    </div>
+    <div class="stack">
+      <button class="btn" data-go="host">Host a game</button>
+      <button class="btn ghost" data-go="join">Join with a code</button>
+    </div>
+    <p class="note">Host on the biggest screen in the room. Everyone else plays on their phone.</p>
+  </section>
+</template>
+
+<template id="t-host-setup">
+  <section class="pane">
+    <h2 class="pagetitle">Set up the round</h2>
+    <div class="panel">
+      <div class="field">
+        <span class="eyebrow">Eras in play</span>
+        <div class="chips" data-chips="eras">
+          <button class="chip on" data-era="80s">Late '80s</button>
+          <button class="chip on" data-era="90s">'90s</button>
+          <button class="chip on" data-era="00s">'00s</button>
+          <button class="chip on" data-era="10s">'10s</button>
+          <button class="chip on" data-era="20s">'20s</button>
+        </div>
+      </div>
+      <div class="field">
+        <span class="eyebrow">Round length</span>
+        <div class="chips" data-chips="questionCount">
+          <button class="chip" data-value="5">5</button>
+          <button class="chip on" data-value="10">10</button>
+          <button class="chip" data-value="15">15</button>
+          <button class="chip" data-value="20">20</button>
+        </div>
+      </div>
+      <div class="field">
+        <span class="eyebrow">Seconds per question</span>
+        <div class="chips" data-chips="clockSeconds">
+          <button class="chip" data-value="15">15</button>
+          <button class="chip on" data-value="20">20</button>
+          <button class="chip" data-value="30">30</button>
+        </div>
+      </div>
+    </div>
+    <button class="btn" data-action="create">Open the room</button>
+    <p class="note" data-slot="pool"></p>
+    <button class="linkish" data-go="landing">Back</button>
+  </section>
+</template>
+
+<template id="t-host-lobby">
+  <section class="pane">
+    <p class="eyebrow center">Join at</p>
+    <p class="joinurl" data-slot="joinurl"></p>
+    <p class="eyebrow center">with the code</p>
+    <p class="roomcode" data-slot="code"></p>
+    <div class="roster" data-slot="roster"></div>
+    <button class="btn" data-action="start">Start the round</button>
+    <p class="note" data-slot="lobbynote"></p>
+  </section>
+</template>
+
+<template id="t-host-question">
+  <section class="pane">
+    <div class="hostbar">
+      <div class="slot"><span class="eyebrow">Question</span><b data-slot="qnum"></b></div>
+      <div class="tags" data-slot="tags"></div>
+      <div class="spacer"></div>
+      <div class="slot right"><span class="eyebrow">Locked in</span><b data-slot="answered"></b></div>
+      <div class="ring" data-slot="ring"><span data-slot="clock"></span></div>
+    </div>
+    <div class="bar"><i data-slot="prog"></i></div>
+    <h2 class="prompt" data-slot="prompt"></h2>
+    <div class="grid" data-slot="choices"></div>
+  </section>
+</template>
+
+<template id="t-host-reveal">
+  <section class="pane">
+    <div class="hostbar">
+      <div class="slot"><span class="eyebrow">Question</span><b data-slot="qnum"></b></div>
+      <div class="spacer"></div>
+    </div>
+    <h2 class="prompt small" data-slot="prompt"></h2>
+    <div class="grid" data-slot="choices"></div>
+    <div class="source">
+      <span class="song" data-slot="song"></span>
+      <span class="meta" data-slot="meta"></span>
+    </div>
+    <div class="board" data-slot="board"></div>
+    <button class="btn" data-action="advance" data-slot="nextbtn">Next question</button>
+  </section>
+</template>
+
+<template id="t-host-final">
+  <section class="pane center">
+    <p class="eyebrow">That's the round</p>
+    <h2 class="winner" data-slot="winner"></h2>
+    <div class="board big" data-slot="board"></div>
+    <div class="stack">
+      <button class="btn" data-go="host">Run another round</button>
+      <button class="btn ghost" data-go="landing">Done</button>
+    </div>
+  </section>
+</template>
+
+<template id="t-join">
+  <section class="pane center">
+    <div class="hero tight">
+      <h1>Name <em>That</em> Tune</h1>
+    </div>
+    <div class="panel">
+      <label class="field">
+        <span class="eyebrow">Room code</span>
+        <input id="f-code" class="input code" inputmode="text" autocomplete="off"
+               autocapitalize="characters" spellcheck="false" maxlength="4" placeholder="ABCD">
+      </label>
+      <label class="field">
+        <span class="eyebrow">Your name</span>
+        <input id="f-name" class="input" autocomplete="off" maxlength="14" placeholder="Jimmy">
+      </label>
+    </div>
+    <button class="btn" data-action="join">Join the game</button>
+    <p class="note err" data-slot="joinerr"></p>
+    <button class="linkish" data-go="landing">Back</button>
+  </section>
+</template>
+
+<template id="t-player-wait">
+  <section class="pane center tall">
+    <p class="eyebrow">You're in</p>
+    <h2 class="yourname" data-slot="name"></h2>
+    <p class="lede" data-slot="waitnote">Look at the big screen. The host starts the round.</p>
+    <div class="roster small" data-slot="roster"></div>
+  </section>
+</template>
+
+<template id="t-player-question">
+  <section class="pane">
+    <div class="playerbar">
+      <div class="slot"><span class="eyebrow">Score</span><b data-slot="score"></b></div>
+      <div class="spacer"></div>
+      <div class="slot right"><span class="eyebrow">Question</span><b data-slot="qnum"></b></div>
+      <div class="ring small" data-slot="ring"><span data-slot="clock"></span></div>
+    </div>
+    <p class="promptmini" data-slot="prompt"></p>
+    <div class="grid phone" data-slot="choices"></div>
+  </section>
+</template>
+
+<template id="t-player-locked">
+  <section class="pane center tall">
+    <p class="eyebrow">Locked in</p>
+    <h2 class="picked" data-slot="picked"></h2>
+    <p class="lede">Nothing to do but sweat.</p>
+    <p class="note" data-slot="waiting"></p>
+  </section>
+</template>
+
+<template id="t-player-reveal">
+  <section class="pane center tall">
+    <h2 class="verdict" data-slot="verdict"></h2>
+    <p class="pts" data-slot="pts"></p>
+    <p class="lede" data-slot="correct"></p>
+    <div class="statrow">
+      <div class="stat"><b data-slot="score"></b><small>Score</small></div>
+      <div class="stat"><b data-slot="place"></b><small>Place</small></div>
+    </div>
+  </section>
+</template>
+
+<template id="t-player-final">
+  <section class="pane center tall">
+    <p class="eyebrow">Final</p>
+    <h2 class="winner" data-slot="place"></h2>
+    <p class="lede" data-slot="summary"></p>
+    <div class="board" data-slot="board"></div>
+    <button class="btn ghost" data-go="landing">Leave</button>
+  </section>
+</template>
+
+<template id="t-error">
+  <section class="pane center tall">
+    <p class="eyebrow">Hmm</p>
+    <h2 class="pagetitle" data-slot="msg"></h2>
+    <button class="btn" data-go="landing">Start over</button>
+  </section>
+</template>
+
+<script src="app.js"></script>
+</body>
+</html>
