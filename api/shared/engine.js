@@ -71,13 +71,27 @@ function dealQuestions(settings) {
   const want = Math.min(settings.questionCount, inPlay.length);
   const picks = [];
 
+  // Some songs carry more than one question. Hearing the same track twice in
+  // one round feels like a bug to players, so skip past a repeat unless the
+  // pool is too thin to avoid it.
+  const used = new Set();
+  const songKey = (q) => JSON.stringify([q.song, q.artist]).toLowerCase();
+  const takeFrom = (list) => {
+    for (let i = 0; i < list.length; i++) {
+      if (!used.has(songKey(list[i]))) return list.splice(i, 1)[0];
+    }
+    return list.shift(); // a repeated song beats a short round
+  };
+
   while (picks.length < want) {
     let took = 0;
     for (const era of order) {
       if (picks.length >= want) break;
       const list = byEra[era];
       if (list && list.length) {
-        picks.push(list.shift());
+        const q = takeFrom(list);
+        used.add(songKey(q));
+        picks.push(q);
         took++;
       }
     }

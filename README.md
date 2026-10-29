@@ -125,9 +125,14 @@ Rules CI cannot enforce, so mind them yourself:
   wrong *kind* of thing (a song title among album titles) gives the answer away.
 - Spread difficulty. A round that is all deep cuts is not fun.
 
-**The bank currently holds 77 questions.** That is a demo, not a game — six
-people playing twice will exhaust it. Aim for 400+ before it stops repeating,
-with at least 4 per era so a 20-question all-eras round can deal cleanly.
+**The bank holds 278 questions** — 53 from the late '80s, 58 from the '90s,
+57 from the '00s, 59 from the '10s and 51 from the '20s. A 20-question
+all-eras round therefore draws four from each decade, and a group can play
+several nights before seeing a repeat.
+
+A handful of songs carry two questions each. The dealer tracks which songs it
+has already used in a round and skips past a second question about the same
+track, falling back to a repeat only if the pool is too thin to avoid one.
 
 ## Where the iPhone app fits
 

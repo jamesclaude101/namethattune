@@ -1,87 +1,4176 @@
 {
-  "version": 2,
+  "version": 3,
   "note": "Source of truth for questions. 'answer' is the correct choice; 'wrong' holds the three distractors. Choice order is shuffled per room on the server, so order here never matters. Questions paraphrase lyrics rather than quoting them.",
   "questions": [
-    { "id": "take-on-me",      "prompt": "In “Take On Me,” how long does a-ha say it will be before the singer is gone?", "answer": "A day or two", "wrong": ["A year or two", "A week or two", "A month, maybe more"], "song": "Take On Me", "artist": "a-ha", "year": 1985, "era": "80s", "difficulty": "easy" },
-    { "id": "livin-prayer",    "prompt": "In “Livin’ on a Prayer,” where does Gina work?", "answer": "A diner", "wrong": ["A laundromat", "The docks", "A record shop"], "song": "Livin’ on a Prayer", "artist": "Bon Jovi", "year": 1986, "era": "80s", "difficulty": "easy" },
-    { "id": "sweet-child",     "prompt": "In “Sweet Child o’ Mine,” what does Axl Rose compare her eyes to?", "answer": "The blue skies", "wrong": ["A summer rain", "The morning sun", "A clear ocean"], "song": "Sweet Child o’ Mine", "artist": "Guns N’ Roses", "year": 1987, "era": "80s", "difficulty": "medium" },
-    { "id": "never-gonna",     "prompt": "Besides giving you up, what does Rick Astley promise never to do?", "answer": "Let you down", "wrong": ["Walk away", "Change his mind", "Leave town"], "song": "Never Gonna Give You Up", "artist": "Rick Astley", "year": 1987, "era": "80s", "difficulty": "easy" },
-    { "id": "dont-you-forget", "prompt": "“Don’t You (Forget About Me)” closed out which 1985 movie?", "answer": "The Breakfast Club", "wrong": ["Pretty in Pink", "Sixteen Candles", "Ferris Bueller’s Day Off"], "song": "Don’t You (Forget About Me)", "artist": "Simple Minds", "year": 1985, "era": "80s", "difficulty": "medium" },
-    { "id": "fast-car",        "prompt": "In “Fast Car,” what does Tracy Chapman want in return for the ride?", "answer": "A ticket to anywhere", "wrong": ["A place to stay", "A job in the city", "A brand new name"], "song": "Fast Car", "artist": "Tracy Chapman", "year": 1988, "era": "80s", "difficulty": "medium" },
-    { "id": "compton",         "prompt": "Which member of N.W.A takes the first verse on “Straight Outta Compton”?", "answer": "Ice Cube", "wrong": ["Eazy-E", "MC Ren", "Dr. Dre"], "song": "Straight Outta Compton", "artist": "N.W.A", "year": 1988, "era": "80s", "difficulty": "hard" },
-    { "id": "orinoco",         "prompt": "Enya’s 1988 hit “Orinoco Flow” is better known by which phrase from its chorus?", "answer": "Sail away", "wrong": ["Drift along", "Carry me", "Far away"], "song": "Orinoco Flow", "artist": "Enya", "year": 1988, "era": "80s", "difficulty": "medium" },
-    { "id": "bad-video",       "prompt": "Who directed the 18-minute video for Michael Jackson’s “Bad”?", "answer": "Martin Scorsese", "wrong": ["John Landis", "Spike Lee", "Brian De Palma"], "song": "Bad", "artist": "Michael Jackson", "year": 1987, "era": "80s", "difficulty": "hard" },
-    { "id": "walk-this-way",   "prompt": "Run-DMC remade “Walk This Way” in 1986 with which band?", "answer": "Aerosmith", "wrong": ["Kiss", "Van Halen", "The Cars"], "song": "Walk This Way", "artist": "Run-DMC & Aerosmith", "year": 1986, "era": "80s", "difficulty": "easy" },
-    { "id": "push-it",         "prompt": "Salt-N-Pepa’s “Push It” was originally released as what?", "answer": "A B-side", "wrong": ["A radio-only edit", "A charity single", "A movie theme"], "song": "Push It", "artist": "Salt-N-Pepa", "year": 1987, "era": "80s", "difficulty": "hard" },
-    { "id": "like-a-prayer",   "prompt": "Madonna lost a sponsorship deal with which company over the “Like a Prayer” video?", "answer": "Pepsi", "wrong": ["Coca-Cola", "Revlon", "Ford"], "song": "Like a Prayer", "artist": "Madonna", "year": 1989, "era": "80s", "difficulty": "hard" },
-
-    { "id": "teen-spirit",     "prompt": "In “Smells Like Teen Spirit,” what does Nirvana demand now that we’re all here?", "answer": "Entertain us", "wrong": ["Set us free", "Let us go", "Wake us up"], "song": "Smells Like Teen Spirit", "artist": "Nirvana", "year": 1991, "era": "90s", "difficulty": "easy" },
-    { "id": "gangstas",        "prompt": "In “Gangsta’s Paradise,” who else thinks Coolio’s mind is gone?", "answer": "His mama", "wrong": ["His lady", "His dad", "His pastor"], "song": "Gangsta’s Paradise", "artist": "Coolio", "year": 1995, "era": "90s", "difficulty": "easy" },
-    { "id": "barbie-girl",     "prompt": "In “Barbie Girl,” where does Barbie want to go?", "answer": "To a party", "wrong": ["To the beach", "To the mall", "To Malibu"], "song": "Barbie Girl", "artist": "Aqua", "year": 1997, "era": "90s", "difficulty": "easy" },
-    { "id": "tubthumping",     "prompt": "Chumbawamba gets knocked down. What happens next?", "answer": "They get up again", "wrong": ["They stay down", "They hit back", "They walk away"], "song": "Tubthumping", "artist": "Chumbawamba", "year": 1997, "era": "90s", "difficulty": "easy" },
-    { "id": "wonderwall",      "prompt": "In “Wonderwall,” what does Oasis say she’s going to be?", "answer": "The one that saves me", "wrong": ["The one that leaves me", "The one who knows", "The last to know"], "song": "Wonderwall", "artist": "Oasis", "year": 1995, "era": "90s", "difficulty": "medium" },
-    { "id": "bitter-sweet",    "prompt": "“Bitter Sweet Symphony” sampled an orchestral cover of which Rolling Stones song?", "answer": "The Last Time", "wrong": ["Paint It Black", "Ruby Tuesday", "Gimme Shelter"], "song": "Bitter Sweet Symphony", "artist": "The Verve", "year": 1997, "era": "90s", "difficulty": "hard" },
-    { "id": "where-its-at",    "prompt": "In “Where It’s At,” what two things does Beck have?", "answer": "Two turntables and a microphone", "wrong": ["Two guitars and a bad attitude", "Two left feet and a plan", "Two tickets and nowhere to be"], "song": "Where It’s At", "artist": "Beck", "year": 1996, "era": "90s", "difficulty": "medium" },
-    { "id": "torn",            "prompt": "“Torn” was a 1997 smash for Natalie Imbruglia, but which band recorded it first?", "answer": "Ednaswap", "wrong": ["Letters to Cleo", "Veruca Salt", "The Sundays"], "song": "Torn", "artist": "Natalie Imbruglia", "year": 1997, "era": "90s", "difficulty": "hard" },
-    { "id": "killing-softly",  "prompt": "The Fugees’ “Killing Me Softly” is a cover of a hit by whom?", "answer": "Roberta Flack", "wrong": ["Diana Ross", "Gladys Knight", "Nina Simone"], "song": "Killing Me Softly", "artist": "Fugees", "year": 1996, "era": "90s", "difficulty": "medium" },
-    { "id": "zombie",          "prompt": "In “Zombie,” which year does Dolores O’Riordan name?", "answer": "1916", "wrong": ["1969", "1922", "1949"], "song": "Zombie", "artist": "The Cranberries", "year": 1994, "era": "90s", "difficulty": "hard" },
-    { "id": "no-diggity",      "prompt": "Blackstreet says there’s no diggity, and no what?", "answer": "Doubt", "wrong": ["Limit", "Problem", "Question"], "song": "No Diggity", "artist": "Blackstreet ft. Dr. Dre", "year": 1996, "era": "90s", "difficulty": "easy" },
-    { "id": "ironic",          "prompt": "In “Ironic,” how many spoons does Alanis Morissette find when all she needs is a knife?", "answer": "Ten thousand", "wrong": ["A hundred", "A thousand", "A million"], "song": "Ironic", "artist": "Alanis Morissette", "year": 1995, "era": "90s", "difficulty": "medium" },
-    { "id": "whats-up",        "prompt": "4 Non Blondes’ song is titled “What’s Up?” — but what does the chorus actually scream?", "answer": "What’s going on", "wrong": ["What’s up", "What’s the point", "What now"], "song": "What’s Up?", "artist": "4 Non Blondes", "year": 1992, "era": "90s", "difficulty": "medium" },
-    { "id": "jump-around",     "prompt": "In “Jump Around,” what does House of Pain do before they begin?", "answer": "Pack it up and pack it in", "wrong": ["Turn it up and tune it out", "Line it up and knock it down", "Shut it down and lock it up"], "song": "Jump Around", "artist": "House of Pain", "year": 1992, "era": "90s", "difficulty": "medium" },
-    { "id": "mmmbop",          "prompt": "Which of these is NOT one of the Hanson brothers behind “MMMBop”?", "answer": "Jordan", "wrong": ["Taylor", "Isaac", "Zac"], "song": "MMMBop", "artist": "Hanson", "year": 1997, "era": "90s", "difficulty": "medium" },
-    { "id": "macarena",        "prompt": "The duo behind “Macarena” came from which country?", "answer": "Spain", "wrong": ["Mexico", "Cuba", "Puerto Rico"], "song": "Macarena", "artist": "Los del Río", "year": 1993, "era": "90s", "difficulty": "hard" },
-
-    { "id": "lose-yourself",   "prompt": "In “Lose Yourself,” what does Eminem say is already on his sweater?", "answer": "Vomit", "wrong": ["Spaghetti sauce", "Blood", "Beer"], "song": "Lose Yourself", "artist": "Eminem", "year": 2002, "era": "00s", "difficulty": "easy" },
-    { "id": "brightside",      "prompt": "In “Mr. Brightside,” how is Brandon Flowers doing now that he’s coming out of his cage?", "answer": "Just fine", "wrong": ["Not great", "Better than ever", "About the same"], "song": "Mr. Brightside", "artist": "The Killers", "year": 2004, "era": "00s", "difficulty": "easy" },
-    { "id": "hollaback",       "prompt": "What fruit does Gwen Stefani spell out in “Hollaback Girl”?", "answer": "Bananas", "wrong": ["Cherries", "Coconuts", "Mangoes"], "song": "Hollaback Girl", "artist": "Gwen Stefani", "year": 2005, "era": "00s", "difficulty": "easy" },
-    { "id": "tik-tok",         "prompt": "In “TiK ToK,” Kesha kicks the guys to the curb unless they look like whom?", "answer": "Mick Jagger", "wrong": ["David Bowie", "Brad Pitt", "Bob Dylan"], "song": "TiK ToK", "artist": "Kesha", "year": 2009, "era": "00s", "difficulty": "medium" },
-    { "id": "hey-ya",          "prompt": "In “Hey Ya!,” what does OutKast tell you to shake it like?", "answer": "A Polaroid picture", "wrong": ["A tambourine", "A soda can", "A bad habit"], "song": "Hey Ya!", "artist": "OutKast", "year": 2003, "era": "00s", "difficulty": "easy" },
-    { "id": "umbrella",        "prompt": "Which word does Rihanna repeat right after “umbrella”?", "answer": "Ella", "wrong": ["Rella", "Yella", "Fella"], "song": "Umbrella", "artist": "Rihanna ft. Jay-Z", "year": 2007, "era": "00s", "difficulty": "easy" },
-    { "id": "in-da-club",      "prompt": "Who produced 50 Cent’s “In Da Club”?", "answer": "Dr. Dre", "wrong": ["Timbaland", "The Neptunes", "Swizz Beatz"], "song": "In Da Club", "artist": "50 Cent", "year": 2003, "era": "00s", "difficulty": "medium" },
-    { "id": "rehab",           "prompt": "In “Rehab,” what is Amy Winehouse’s answer when they try to make her go?", "answer": "No, no, no", "wrong": ["Not today", "Maybe later", "Never again"], "song": "Rehab", "artist": "Amy Winehouse", "year": 2006, "era": "00s", "difficulty": "easy" },
-    { "id": "chasing-cars",    "prompt": "In “Chasing Cars,” what does Snow Patrol ask you to do and just forget the world?", "answer": "Lie here with me", "wrong": ["Run away with me", "Sit still with me", "Drive all night"], "song": "Chasing Cars", "artist": "Snow Patrol", "year": 2006, "era": "00s", "difficulty": "medium" },
-    { "id": "single-ladies",   "prompt": "In “Single Ladies,” what should he have done?", "answer": "Put a ring on it", "wrong": ["Called her back", "Said it out loud", "Shown up on time"], "song": "Single Ladies (Put a Ring on It)", "artist": "Beyoncé", "year": 2008, "era": "00s", "difficulty": "easy" },
-    { "id": "hips-dont-lie",   "prompt": "Which rapper features on Shakira’s “Hips Don’t Lie”?", "answer": "Wyclef Jean", "wrong": ["Pitbull", "Nelly", "Sean Paul"], "song": "Hips Don’t Lie", "artist": "Shakira ft. Wyclef Jean", "year": 2006, "era": "00s", "difficulty": "medium" },
-    { "id": "boulevard",       "prompt": "“Boulevard of Broken Dreams” comes from which Green Day album?", "answer": "American Idiot", "wrong": ["Dookie", "Nimrod", "Warning"], "song": "Boulevard of Broken Dreams", "artist": "Green Day", "year": 2004, "era": "00s", "difficulty": "medium" },
-    { "id": "toxic",           "prompt": "In “Toxic,” Britney Spears says the taste of his lips is a poison what?", "answer": "Paradise", "wrong": ["Promise", "Perfume", "Potion"], "song": "Toxic", "artist": "Britney Spears", "year": 2003, "era": "00s", "difficulty": "medium" },
-    { "id": "seven-nation",    "prompt": "The riff on “Seven Nation Army” sounds like a bass. What actually played it?", "answer": "A guitar through an octave pedal", "wrong": ["A bass guitar", "An analog synth", "A cello"], "song": "Seven Nation Army", "artist": "The White Stripes", "year": 2003, "era": "00s", "difficulty": "hard" },
-    { "id": "since-u-been",    "prompt": "Which Swedish producer co-wrote Kelly Clarkson’s “Since U Been Gone”?", "answer": "Max Martin", "wrong": ["Stargate", "Avicii", "Shellback"], "song": "Since U Been Gone", "artist": "Kelly Clarkson", "year": 2004, "era": "00s", "difficulty": "medium" },
-    { "id": "crazy-in-love",   "prompt": "The horn stab that opens “Crazy in Love” is lifted from which group?", "answer": "The Chi-Lites", "wrong": ["The Isley Brothers", "The Spinners", "The O’Jays"], "song": "Crazy in Love", "artist": "Beyoncé ft. Jay-Z", "year": 2003, "era": "00s", "difficulty": "hard" },
-    { "id": "gaga-debut",      "prompt": "What was the title of Lady Gaga’s debut album?", "answer": "The Fame", "wrong": ["Born This Way", "Artpop", "Cheek to Cheek"], "song": "Just Dance", "artist": "Lady Gaga", "year": 2008, "era": "00s", "difficulty": "medium" },
-
-    { "id": "call-me-maybe",   "prompt": "In “Call Me Maybe,” what did Carly Rae Jepsen throw before she met you?", "answer": "A wish in the well", "wrong": ["A coin in the fountain", "A note in the fire", "A stone in the lake"], "song": "Call Me Maybe", "artist": "Carly Rae Jepsen", "year": 2012, "era": "10s", "difficulty": "medium" },
-    { "id": "somebody-knew",   "prompt": "Who sings the second verse of “Somebody That I Used to Know”?", "answer": "Kimbra", "wrong": ["Sia", "Lorde", "Lykke Li"], "song": "Somebody That I Used to Know", "artist": "Gotye ft. Kimbra", "year": 2011, "era": "10s", "difficulty": "medium" },
-    { "id": "royals",          "prompt": "In “Royals,” what has Lorde never seen in the flesh?", "answer": "A diamond", "wrong": ["A limousine", "A gold chain", "A tiger"], "song": "Royals", "artist": "Lorde", "year": 2013, "era": "10s", "difficulty": "medium" },
-    { "id": "thrift-shop",     "prompt": "How much does Macklemore have in his pocket in “Thrift Shop”?", "answer": "Twenty dollars", "wrong": ["Fifty dollars", "Five dollars", "A hundred dollars"], "song": "Thrift Shop", "artist": "Macklemore & Ryan Lewis", "year": 2012, "era": "10s", "difficulty": "easy" },
-    { "id": "uptown-funk",     "prompt": "Bruno Mars sings “Uptown Funk,” but whose single is it?", "answer": "Mark Ronson", "wrong": ["Pharrell Williams", "Calvin Harris", "Diplo"], "song": "Uptown Funk", "artist": "Mark Ronson ft. Bruno Mars", "year": 2014, "era": "10s", "difficulty": "medium" },
-    { "id": "shake-it-off",    "prompt": "Players gonna play and haters gonna hate. What are the heartbreakers gonna do?", "answer": "Break", "wrong": ["Lie", "Leave", "Cheat"], "song": "Shake It Off", "artist": "Taylor Swift", "year": 2014, "era": "10s", "difficulty": "easy" },
-    { "id": "old-town-road",   "prompt": "Who joined Lil Nas X on the remix that made “Old Town Road” unstoppable?", "answer": "Billy Ray Cyrus", "wrong": ["Blake Shelton", "Keith Urban", "Luke Combs"], "song": "Old Town Road", "artist": "Lil Nas X", "year": 2019, "era": "10s", "difficulty": "easy" },
-    { "id": "bad-guy",         "prompt": "Which one-word tag ends every chorus of “Bad Guy”?", "answer": "Duh", "wrong": ["Huh", "Yeah", "Oof"], "song": "Bad Guy", "artist": "Billie Eilish", "year": 2019, "era": "10s", "difficulty": "easy" },
-    { "id": "closer",          "prompt": "In “Closer,” which band’s song is playing on the stereo?", "answer": "Blink-182", "wrong": ["Green Day", "Sum 41", "Jimmy Eat World"], "song": "Closer", "artist": "The Chainsmokers ft. Halsey", "year": 2016, "era": "10s", "difficulty": "medium" },
-    { "id": "pumped-up",       "prompt": "In “Pumped Up Kicks,” what are you told to outrun?", "answer": "My gun", "wrong": ["My car", "My dogs", "The sun"], "song": "Pumped Up Kicks", "artist": "Foster the People", "year": 2011, "era": "10s", "difficulty": "medium" },
-    { "id": "happy",           "prompt": "Pharrell’s “Happy” was written for which animated movie?", "answer": "Despicable Me 2", "wrong": ["The Croods", "Trolls", "Rio 2"], "song": "Happy", "artist": "Pharrell Williams", "year": 2013, "era": "10s", "difficulty": "medium" },
-    { "id": "gangnam",         "prompt": "“Gangnam Style” was the first video ever to cross which YouTube milestone?", "answer": "One billion views", "wrong": ["One hundred million views", "Five hundred million views", "Two billion views"], "song": "Gangnam Style", "artist": "PSY", "year": 2012, "era": "10s", "difficulty": "medium" },
-    { "id": "hello",           "prompt": "Adele says hello from where?", "answer": "The other side", "wrong": ["Across the room", "The old place", "Down the line"], "song": "Hello", "artist": "Adele", "year": 2015, "era": "10s", "difficulty": "easy" },
-    { "id": "despacito",       "prompt": "Which Canadian singer jumped on the “Despacito” remix?", "answer": "Justin Bieber", "wrong": ["The Weeknd", "Shawn Mendes", "Drake"], "song": "Despacito", "artist": "Luis Fonsi & Daddy Yankee", "year": 2017, "era": "10s", "difficulty": "easy" },
-    { "id": "ho-hey",          "prompt": "In “Ho Hey,” what do The Lumineers call you?", "answer": "Sweetheart", "wrong": ["Darling", "Their only one", "Their whole world"], "song": "Ho Hey", "artist": "The Lumineers", "year": 2012, "era": "10s", "difficulty": "medium" },
-    { "id": "rolling-deep",    "prompt": "In “Rolling in the Deep,” what does Adele say they could have had?", "answer": "It all", "wrong": ["One more night", "A second chance", "Everything but this"], "song": "Rolling in the Deep", "artist": "Adele", "year": 2010, "era": "10s", "difficulty": "easy" },
-    { "id": "take-me-church",  "prompt": "Hozier’s “Take Me to Church” was a debut single out of which country?", "answer": "Ireland", "wrong": ["Scotland", "Australia", "New Zealand"], "song": "Take Me to Church", "artist": "Hozier", "year": 2013, "era": "10s", "difficulty": "medium" },
-
-    { "id": "blinding-lights", "prompt": "“Blinding Lights” is from which album?", "answer": "After Hours", "wrong": ["Starboy", "Dawn FM", "Beauty Behind the Madness"], "song": "Blinding Lights", "artist": "The Weeknd", "year": 2020, "era": "20s", "difficulty": "medium" },
-    { "id": "drivers-license", "prompt": "In “Drivers License,” what color is the hair of the girl Olivia Rodrigo can’t stop thinking about?", "answer": "Blonde", "wrong": ["Red", "Dark brown", "Black"], "song": "Drivers License", "artist": "Olivia Rodrigo", "year": 2021, "era": "20s", "difficulty": "medium" },
-    { "id": "anti-hero",       "prompt": "In “Anti-Hero,” what does Taylor Swift admit she is?", "answer": "The problem", "wrong": ["The villain", "The last to know", "The quiet type"], "song": "Anti-Hero", "artist": "Taylor Swift", "year": 2022, "era": "20s", "difficulty": "easy" },
-    { "id": "flowers",         "prompt": "In “Flowers,” what can Miley Cyrus write in the sand?", "answer": "Her name", "wrong": ["His name", "A goodbye", "Nothing at all"], "song": "Flowers", "artist": "Miley Cyrus", "year": 2023, "era": "20s", "difficulty": "medium" },
-    { "id": "espresso",        "prompt": "What one word does Sabrina Carpenter use to describe herself in her 2024 smash?", "answer": "Espresso", "wrong": ["Energy", "Attitude", "Amnesia"], "song": "Espresso", "artist": "Sabrina Carpenter", "year": 2024, "era": "20s", "difficulty": "easy" },
-    { "id": "as-it-was",       "prompt": "Whose voice opens “As It Was” before the synths come in?", "answer": "Harry Styles’ goddaughter", "wrong": ["His mother", "A sampled newsreader", "His producer"], "song": "As It Was", "artist": "Harry Styles", "year": 2022, "era": "20s", "difficulty": "hard" },
-    { "id": "unholy",          "prompt": "Which singer features on Sam Smith’s “Unholy”?", "answer": "Kim Petras", "wrong": ["Normani", "Charli XCX", "Rina Sawayama"], "song": "Unholy", "artist": "Sam Smith & Kim Petras", "year": 2022, "era": "20s", "difficulty": "medium" },
-    { "id": "good-4-u",        "prompt": "Which band was added to the writing credits of “Good 4 U” after release?", "answer": "Paramore", "wrong": ["Fall Out Boy", "My Chemical Romance", "Blink-182"], "song": "Good 4 U", "artist": "Olivia Rodrigo", "year": 2021, "era": "20s", "difficulty": "hard" },
-    { "id": "not-like-us",     "prompt": "Who produced Kendrick Lamar’s “Not Like Us”?", "answer": "Mustard", "wrong": ["Metro Boomin", "Sounwave", "Hit-Boy"], "song": "Not Like Us", "artist": "Kendrick Lamar", "year": 2024, "era": "20s", "difficulty": "medium" },
-    { "id": "texas-hold-em",   "prompt": "“Texas Hold ’Em” comes from which Beyoncé album?", "answer": "Cowboy Carter", "wrong": ["Renaissance", "Lemonade", "Black Is King"], "song": "Texas Hold ’Em", "artist": "Beyoncé", "year": 2024, "era": "20s", "difficulty": "medium" },
-    { "id": "levitating",      "prompt": "“Levitating” is from which Dua Lipa album?", "answer": "Future Nostalgia", "wrong": ["Radical Optimism", "Dua Lipa", "Club Future Nostalgia"], "song": "Levitating", "artist": "Dua Lipa", "year": 2020, "era": "20s", "difficulty": "medium" },
-    { "id": "heat-waves",      "prompt": "“Heat Waves” came out in 2020. When did it finally top the US chart?", "answer": "2022", "wrong": ["2020", "2021", "2023"], "song": "Heat Waves", "artist": "Glass Animals", "year": 2020, "era": "20s", "difficulty": "hard" },
-    { "id": "die-with-smile",  "prompt": "Which two artists duet on “Die With a Smile”?", "answer": "Lady Gaga and Bruno Mars", "wrong": ["Dua Lipa and The Weeknd", "Ariana Grande and Post Malone", "Miley Cyrus and Bruno Mars"], "song": "Die With a Smile", "artist": "Lady Gaga & Bruno Mars", "year": 2024, "era": "20s", "difficulty": "easy" },
-    { "id": "birds-feather",   "prompt": "“Birds of a Feather” is from which Billie Eilish album?", "answer": "Hit Me Hard and Soft", "wrong": ["Happier Than Ever", "When We All Fall Asleep, Where Do We Go?", "Guitar Songs"], "song": "Birds of a Feather", "artist": "Billie Eilish", "year": 2024, "era": "20s", "difficulty": "medium" },
-    { "id": "snooze",          "prompt": "“Snooze” was a long-running hit from which SZA album?", "answer": "SOS", "wrong": ["Ctrl", "Lana", "Z"], "song": "Snooze", "artist": "SZA", "year": 2023, "era": "20s", "difficulty": "medium" }
+    {
+      "id": "take-on-me",
+      "prompt": "In \u201cTake On Me,\u201d how long does a-ha say it will be before the singer is gone?",
+      "answer": "A day or two",
+      "wrong": [
+        "A year or two",
+        "A week or two",
+        "A month, maybe more"
+      ],
+      "song": "Take On Me",
+      "artist": "a-ha",
+      "year": 1985,
+      "era": "80s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "livin-prayer",
+      "prompt": "In \u201cLivin\u2019 on a Prayer,\u201d where does Gina work?",
+      "answer": "A diner",
+      "wrong": [
+        "A laundromat",
+        "The docks",
+        "A record shop"
+      ],
+      "song": "Livin\u2019 on a Prayer",
+      "artist": "Bon Jovi",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "sweet-child",
+      "prompt": "In \u201cSweet Child o\u2019 Mine,\u201d what does Axl Rose compare her eyes to?",
+      "answer": "The blue skies",
+      "wrong": [
+        "A summer rain",
+        "The morning sun",
+        "A clear ocean"
+      ],
+      "song": "Sweet Child o\u2019 Mine",
+      "artist": "Guns N\u2019 Roses",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "never-gonna",
+      "prompt": "Besides giving you up, what does Rick Astley promise never to do?",
+      "answer": "Let you down",
+      "wrong": [
+        "Walk away",
+        "Change his mind",
+        "Leave town"
+      ],
+      "song": "Never Gonna Give You Up",
+      "artist": "Rick Astley",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "dont-you-forget",
+      "prompt": "\u201cDon\u2019t You (Forget About Me)\u201d closed out which 1985 movie?",
+      "answer": "The Breakfast Club",
+      "wrong": [
+        "Pretty in Pink",
+        "Sixteen Candles",
+        "Ferris Bueller\u2019s Day Off"
+      ],
+      "song": "Don\u2019t You (Forget About Me)",
+      "artist": "Simple Minds",
+      "year": 1985,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "fast-car",
+      "prompt": "In \u201cFast Car,\u201d what does Tracy Chapman want in return for the ride?",
+      "answer": "A ticket to anywhere",
+      "wrong": [
+        "A place to stay",
+        "A job in the city",
+        "A brand new name"
+      ],
+      "song": "Fast Car",
+      "artist": "Tracy Chapman",
+      "year": 1988,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "compton",
+      "prompt": "Which member of N.W.A takes the first verse on \u201cStraight Outta Compton\u201d?",
+      "answer": "Ice Cube",
+      "wrong": [
+        "Eazy-E",
+        "MC Ren",
+        "Dr. Dre"
+      ],
+      "song": "Straight Outta Compton",
+      "artist": "N.W.A",
+      "year": 1988,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "orinoco",
+      "prompt": "Enya\u2019s 1988 hit \u201cOrinoco Flow\u201d is better known by which phrase from its chorus?",
+      "answer": "Sail away",
+      "wrong": [
+        "Drift along",
+        "Carry me",
+        "Far away"
+      ],
+      "song": "Orinoco Flow",
+      "artist": "Enya",
+      "year": 1988,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bad-video",
+      "prompt": "Who directed the 18-minute video for Michael Jackson\u2019s \u201cBad\u201d?",
+      "answer": "Martin Scorsese",
+      "wrong": [
+        "John Landis",
+        "Spike Lee",
+        "Brian De Palma"
+      ],
+      "song": "Bad",
+      "artist": "Michael Jackson",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "walk-this-way",
+      "prompt": "Run-DMC remade \u201cWalk This Way\u201d in 1986 with which band?",
+      "answer": "Aerosmith",
+      "wrong": [
+        "Kiss",
+        "Van Halen",
+        "The Cars"
+      ],
+      "song": "Walk This Way",
+      "artist": "Run-DMC & Aerosmith",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "push-it",
+      "prompt": "Salt-N-Pepa\u2019s \u201cPush It\u201d was originally released as what?",
+      "answer": "A B-side",
+      "wrong": [
+        "A radio-only edit",
+        "A charity single",
+        "A movie theme"
+      ],
+      "song": "Push It",
+      "artist": "Salt-N-Pepa",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "like-a-prayer",
+      "prompt": "Madonna lost a sponsorship deal with which company over the \u201cLike a Prayer\u201d video?",
+      "answer": "Pepsi",
+      "wrong": [
+        "Coca-Cola",
+        "Revlon",
+        "Ford"
+      ],
+      "song": "Like a Prayer",
+      "artist": "Madonna",
+      "year": 1989,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "money-nothing",
+      "prompt": "In \u201cMoney for Nothing,\u201d which guest sings the \u201cI want my MTV\u201d line?",
+      "answer": "Sting",
+      "wrong": [
+        "Phil Collins",
+        "Bono",
+        "Mark Knopfler"
+      ],
+      "song": "Money for Nothing",
+      "artist": "Dire Straits",
+      "year": 1985,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "we-are-the-world",
+      "prompt": "\u201cWe Are the World\u201d was co-written by Michael Jackson and whom?",
+      "answer": "Lionel Richie",
+      "wrong": [
+        "Quincy Jones",
+        "Stevie Wonder",
+        "Paul McCartney"
+      ],
+      "song": "We Are the World",
+      "artist": "USA for Africa",
+      "year": 1985,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "final-countdown",
+      "prompt": "What instrument plays the famous opening riff of \u201cThe Final Countdown\u201d?",
+      "answer": "A synthesizer",
+      "wrong": [
+        "An electric guitar",
+        "A trumpet",
+        "A church organ"
+      ],
+      "song": "The Final Countdown",
+      "artist": "Europe",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "tommy-docks",
+      "prompt": "In \u201cLivin\u2019 on a Prayer,\u201d where did Tommy used to work?",
+      "answer": "On the docks",
+      "wrong": [
+        "At a garage",
+        "In a mill",
+        "On the railroad"
+      ],
+      "song": "Livin\u2019 on a Prayer",
+      "artist": "Bon Jovi",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "raspberry-beret",
+      "prompt": "In \u201cRaspberry Beret,\u201d where did the girl work?",
+      "answer": "A five-and-dime",
+      "wrong": [
+        "A diner",
+        "A record store",
+        "A laundromat"
+      ],
+      "song": "Raspberry Beret",
+      "artist": "Prince",
+      "year": 1985,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "papa-dont-preach",
+      "prompt": "In \u201cPapa Don\u2019t Preach,\u201d what has Madonna made up her mind to do?",
+      "answer": "Keep her baby",
+      "wrong": [
+        "Leave home",
+        "Get married",
+        "Quit her job"
+      ],
+      "song": "Papa Don\u2019t Preach",
+      "artist": "Madonna",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "into-the-groove",
+      "prompt": "\u201cInto the Groove\u201d was tied to which 1985 Madonna film?",
+      "answer": "Desperately Seeking Susan",
+      "wrong": [
+        "Who\u2019s That Girl",
+        "Shanghai Surprise",
+        "Dick Tracy"
+      ],
+      "song": "Into the Groove",
+      "artist": "Madonna",
+      "year": 1985,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "smooth-criminal",
+      "prompt": "Who does Michael Jackson keep asking after in \u201cSmooth Criminal\u201d?",
+      "answer": "Annie",
+      "wrong": [
+        "Billie",
+        "Susie",
+        "Diana"
+      ],
+      "song": "Smooth Criminal",
+      "artist": "Michael Jackson",
+      "year": 1988,
+      "era": "80s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "joshua-tree",
+      "prompt": "\u201cWith or Without You\u201d comes from which U2 album?",
+      "answer": "The Joshua Tree",
+      "wrong": [
+        "Achtung Baby",
+        "War",
+        "Rattle and Hum"
+      ],
+      "song": "With or Without You",
+      "artist": "U2",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "danger-zone",
+      "prompt": "\u201cDanger Zone\u201d was the signature song of which 1986 movie?",
+      "answer": "Top Gun",
+      "wrong": [
+        "Days of Thunder",
+        "Iron Eagle",
+        "Firefox"
+      ],
+      "song": "Danger Zone",
+      "artist": "Kenny Loggins",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "breath-away",
+      "prompt": "Which Top Gun song won the Oscar for Best Original Song?",
+      "answer": "Take My Breath Away",
+      "wrong": [
+        "Danger Zone",
+        "Playing with the Boys",
+        "Mighty Wings"
+      ],
+      "song": "Take My Breath Away",
+      "artist": "Berlin",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "big-chair",
+      "prompt": "\u201cEverybody Wants to Rule the World\u201d comes from which Tears for Fears album?",
+      "answer": "Songs from the Big Chair",
+      "wrong": [
+        "The Hurting",
+        "The Seeds of Love",
+        "Elemental"
+      ],
+      "song": "Everybody Wants to Rule the World",
+      "artist": "Tears for Fears",
+      "year": 1985,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "west-end-girls",
+      "prompt": "Which duo had a transatlantic number one with \u201cWest End Girls\u201d?",
+      "answer": "Pet Shop Boys",
+      "wrong": [
+        "Erasure",
+        "Soft Cell",
+        "Yazoo"
+      ],
+      "song": "West End Girls",
+      "artist": "Pet Shop Boys",
+      "year": 1985,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "addicted-love",
+      "prompt": "The \u201cAddicted to Love\u201d video is remembered for a backing band made up of what?",
+      "answer": "Identically dressed models",
+      "wrong": [
+        "Puppets",
+        "Children",
+        "Nobody at all"
+      ],
+      "song": "Addicted to Love",
+      "artist": "Robert Palmer",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sledgehammer",
+      "prompt": "What animation technique drives the \u201cSledgehammer\u201d video?",
+      "answer": "Stop motion",
+      "wrong": [
+        "Rotoscoping",
+        "Cel animation",
+        "Motion capture"
+      ],
+      "song": "Sledgehammer",
+      "artist": "Peter Gabriel",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "manic-monday",
+      "prompt": "Who wrote The Bangles\u2019 \u201cManic Monday\u201d under a pseudonym?",
+      "answer": "Prince",
+      "wrong": [
+        "Michael Jackson",
+        "Elvis Costello",
+        "David Bowie"
+      ],
+      "song": "Manic Monday",
+      "artist": "The Bangles",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "view-to-kill",
+      "prompt": "Which band recorded the James Bond theme \u201cA View to a Kill\u201d?",
+      "answer": "Duran Duran",
+      "wrong": [
+        "Spandau Ballet",
+        "Wham!",
+        "The Police"
+      ],
+      "song": "A View to a Kill",
+      "artist": "Duran Duran",
+      "year": 1985,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "paradise-city",
+      "prompt": "In \u201cParadise City,\u201d what is the grass like where Guns N\u2019 Roses want to go?",
+      "answer": "Green",
+      "wrong": [
+        "Dry",
+        "Tall",
+        "Long gone"
+      ],
+      "song": "Paradise City",
+      "artist": "Guns N\u2019 Roses",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bad-name",
+      "prompt": "In \u201cYou Give Love a Bad Name,\u201d where has Bon Jovi been shot?",
+      "answer": "Through the heart",
+      "wrong": [
+        "In the back",
+        "Through the hand",
+        "In the dark"
+      ],
+      "song": "You Give Love a Bad Name",
+      "artist": "Bon Jovi",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "wanted-dead",
+      "prompt": "In \u201cWanted Dead or Alive,\u201d what does Bon Jovi ride?",
+      "answer": "A steel horse",
+      "wrong": [
+        "A midnight train",
+        "A long road",
+        "A black Cadillac"
+      ],
+      "song": "Wanted Dead or Alive",
+      "artist": "Bon Jovi",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "here-i-go-again",
+      "prompt": "The \u201cHere I Go Again\u201d video is best remembered for someone doing what?",
+      "answer": "Cartwheeling across car hoods",
+      "wrong": [
+        "Walking on water",
+        "Dancing in the rain",
+        "Riding a motorcycle"
+      ],
+      "song": "Here I Go Again",
+      "artist": "Whitesnake",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "every-rose",
+      "prompt": "What does Poison say every rose has?",
+      "answer": "Its thorn",
+      "wrong": [
+        "Its day",
+        "A reason",
+        "A price"
+      ],
+      "song": "Every Rose Has Its Thorn",
+      "artist": "Poison",
+      "year": 1988,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "dont-worry-happy",
+      "prompt": "What is unusual about the recording of \u201cDon\u2019t Worry, Be Happy\u201d?",
+      "answer": "There are no instruments on it",
+      "wrong": [
+        "It was recorded in one take",
+        "It has no chorus",
+        "It was recorded backwards"
+      ],
+      "song": "Don\u2019t Worry, Be Happy",
+      "artist": "Bobby McFerrin",
+      "year": 1988,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "licensed-to-ill",
+      "prompt": "Which album was the first rap record to top the Billboard 200?",
+      "answer": "Licensed to Ill",
+      "wrong": [
+        "Raising Hell",
+        "Straight Outta Compton",
+        "Paid in Full"
+      ],
+      "song": "Fight for Your Right",
+      "artist": "Beastie Boys",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "parents-dont",
+      "prompt": "Which act won the first ever Grammy awarded for a rap performance?",
+      "answer": "DJ Jazzy Jeff & The Fresh Prince",
+      "wrong": [
+        "Run-DMC",
+        "LL Cool J",
+        "Salt-N-Pepa"
+      ],
+      "song": "Parents Just Don\u2019t Understand",
+      "artist": "DJ Jazzy Jeff & The Fresh Prince",
+      "year": 1988,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "fight-the-power",
+      "prompt": "\u201cFight the Power\u201d was written for which Spike Lee film?",
+      "answer": "Do the Right Thing",
+      "wrong": [
+        "Malcolm X",
+        "She\u2019s Gotta Have It",
+        "Mo\u2019 Better Blues"
+      ],
+      "song": "Fight the Power",
+      "artist": "Public Enemy",
+      "year": 1989,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "love-shack",
+      "prompt": "Which two words are shouted near the end of \u201cLove Shack\u201d?",
+      "answer": "Tin roof, rusted",
+      "wrong": [
+        "Hot plate, melted",
+        "Bus stop, empty",
+        "Screen door, slamming"
+      ],
+      "song": "Love Shack",
+      "artist": "The B-52\u2019s",
+      "year": 1989,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "eternal-flame",
+      "prompt": "Which Bangles ballad asks whether you feel a burning in your heart?",
+      "answer": "Eternal Flame",
+      "wrong": [
+        "Manic Monday",
+        "In Your Room",
+        "Hazy Shade of Winter"
+      ],
+      "song": "Eternal Flame",
+      "artist": "The Bangles",
+      "year": 1989,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "running-up-hill",
+      "prompt": "\u201cRunning Up That Hill\u201d shot back up the charts in 2022 thanks to which show?",
+      "answer": "Stranger Things",
+      "wrong": [
+        "Wednesday",
+        "Euphoria",
+        "The Bear"
+      ],
+      "song": "Running Up That Hill",
+      "artist": "Kate Bush",
+      "year": 1985,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "rock-me-amadeus",
+      "prompt": "Which composer is the subject of \u201cRock Me Amadeus\u201d?",
+      "answer": "Mozart",
+      "wrong": [
+        "Beethoven",
+        "Bach",
+        "Haydn"
+      ],
+      "song": "Rock Me Amadeus",
+      "artist": "Falco",
+      "year": 1985,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "la-bamba",
+      "prompt": "Los Lobos took \u201cLa Bamba\u201d to number one from the biopic of which singer?",
+      "answer": "Ritchie Valens",
+      "wrong": [
+        "Buddy Holly",
+        "Roy Orbison",
+        "Sam Cooke"
+      ],
+      "song": "La Bamba",
+      "artist": "Los Lobos",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "personal-jesus",
+      "prompt": "Which band told you to reach out and touch faith?",
+      "answer": "Depeche Mode",
+      "wrong": [
+        "New Order",
+        "The Cure",
+        "Erasure"
+      ],
+      "song": "Personal Jesus",
+      "artist": "Depeche Mode",
+      "year": 1989,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "just-like-heaven",
+      "prompt": "Robert Smith wrote which Cure single about a seaside trip with his future wife?",
+      "answer": "Just Like Heaven",
+      "wrong": [
+        "Lovesong",
+        "Close to Me",
+        "In Between Days"
+      ],
+      "song": "Just Like Heaven",
+      "artist": "The Cure",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "lovesong",
+      "prompt": "Robert Smith wrote \u201cLovesong\u201d as a present for whom?",
+      "answer": "His wife",
+      "wrong": [
+        "His mother",
+        "His bandmate",
+        "His daughter"
+      ],
+      "song": "Lovesong",
+      "artist": "The Cure",
+      "year": 1989,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "toms-diner",
+      "prompt": "Which a cappella song was famously used while developing the MP3 format?",
+      "answer": "Tom\u2019s Diner",
+      "wrong": [
+        "Luka",
+        "Don\u2019t Worry, Be Happy",
+        "Bohemian Rhapsody"
+      ],
+      "song": "Tom\u2019s Diner",
+      "artist": "Suzanne Vega",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "dont-dream",
+      "prompt": "Which band sang that they come to build a wall between us, but hey now?",
+      "answer": "Crowded House",
+      "wrong": [
+        "INXS",
+        "Men at Work",
+        "Icehouse"
+      ],
+      "song": "Don\u2019t Dream It\u2019s Over",
+      "artist": "Crowded House",
+      "year": 1986,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "need-you-tonight",
+      "prompt": "Which Australian band asked you to slide over here in 1987?",
+      "answer": "INXS",
+      "wrong": [
+        "Midnight Oil",
+        "Crowded House",
+        "Hunters & Collectors"
+      ],
+      "song": "Need You Tonight",
+      "artist": "INXS",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "wanna-dance",
+      "prompt": "Whitney Houston wants to dance with somebody who does what?",
+      "answer": "Loves her",
+      "wrong": [
+        "Knows her",
+        "Waits for her",
+        "Understands her"
+      ],
+      "song": "I Wanna Dance with Somebody",
+      "artist": "Whitney Houston",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "red-red-wine",
+      "prompt": "UB40\u2019s \u201cRed Red Wine\u201d is a cover of a song written by whom?",
+      "answer": "Neil Diamond",
+      "wrong": [
+        "Bob Marley",
+        "Van Morrison",
+        "Jimmy Cliff"
+      ],
+      "song": "Red Red Wine",
+      "artist": "UB40",
+      "year": 1988,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "pump-up-jam",
+      "prompt": "Which 1989 dance hit told you to pump up the jam?",
+      "answer": "Pump Up the Jam",
+      "wrong": [
+        "Ride on Time",
+        "The Power",
+        "Good Life"
+      ],
+      "song": "Pump Up the Jam",
+      "artist": "Technotronic",
+      "year": 1989,
+      "era": "80s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "faith-organ",
+      "prompt": "Which George Michael single opens with a church organ playing one of his Wham! hits?",
+      "answer": "Faith",
+      "wrong": [
+        "Father Figure",
+        "One More Try",
+        "Monkey"
+      ],
+      "song": "Faith",
+      "artist": "George Michael",
+      "year": 1987,
+      "era": "80s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "teen-spirit",
+      "prompt": "In \u201cSmells Like Teen Spirit,\u201d what does Nirvana demand now that we\u2019re all here?",
+      "answer": "Entertain us",
+      "wrong": [
+        "Set us free",
+        "Let us go",
+        "Wake us up"
+      ],
+      "song": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "year": 1991,
+      "era": "90s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "gangstas",
+      "prompt": "In \u201cGangsta\u2019s Paradise,\u201d who else thinks Coolio\u2019s mind is gone?",
+      "answer": "His mama",
+      "wrong": [
+        "His lady",
+        "His dad",
+        "His pastor"
+      ],
+      "song": "Gangsta\u2019s Paradise",
+      "artist": "Coolio",
+      "year": 1995,
+      "era": "90s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "barbie-girl",
+      "prompt": "In \u201cBarbie Girl,\u201d where does Barbie want to go?",
+      "answer": "To a party",
+      "wrong": [
+        "To the beach",
+        "To the mall",
+        "To Malibu"
+      ],
+      "song": "Barbie Girl",
+      "artist": "Aqua",
+      "year": 1997,
+      "era": "90s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "tubthumping",
+      "prompt": "Chumbawamba gets knocked down. What happens next?",
+      "answer": "They get up again",
+      "wrong": [
+        "They stay down",
+        "They hit back",
+        "They walk away"
+      ],
+      "song": "Tubthumping",
+      "artist": "Chumbawamba",
+      "year": 1997,
+      "era": "90s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "wonderwall",
+      "prompt": "In \u201cWonderwall,\u201d what does Oasis say she\u2019s going to be?",
+      "answer": "The one that saves me",
+      "wrong": [
+        "The one that leaves me",
+        "The one who knows",
+        "The last to know"
+      ],
+      "song": "Wonderwall",
+      "artist": "Oasis",
+      "year": 1995,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bitter-sweet",
+      "prompt": "\u201cBitter Sweet Symphony\u201d sampled an orchestral cover of which Rolling Stones song?",
+      "answer": "The Last Time",
+      "wrong": [
+        "Paint It Black",
+        "Ruby Tuesday",
+        "Gimme Shelter"
+      ],
+      "song": "Bitter Sweet Symphony",
+      "artist": "The Verve",
+      "year": 1997,
+      "era": "90s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "where-its-at",
+      "prompt": "In \u201cWhere It\u2019s At,\u201d what two things does Beck have?",
+      "answer": "Two turntables and a microphone",
+      "wrong": [
+        "Two guitars and a bad attitude",
+        "Two left feet and a plan",
+        "Two tickets and nowhere to be"
+      ],
+      "song": "Where It\u2019s At",
+      "artist": "Beck",
+      "year": 1996,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "torn",
+      "prompt": "\u201cTorn\u201d was a 1997 smash for Natalie Imbruglia, but which band recorded it first?",
+      "answer": "Ednaswap",
+      "wrong": [
+        "Letters to Cleo",
+        "Veruca Salt",
+        "The Sundays"
+      ],
+      "song": "Torn",
+      "artist": "Natalie Imbruglia",
+      "year": 1997,
+      "era": "90s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "killing-softly",
+      "prompt": "The Fugees\u2019 \u201cKilling Me Softly\u201d is a cover of a hit by whom?",
+      "answer": "Roberta Flack",
+      "wrong": [
+        "Diana Ross",
+        "Gladys Knight",
+        "Nina Simone"
+      ],
+      "song": "Killing Me Softly",
+      "artist": "Fugees",
+      "year": 1996,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "zombie",
+      "prompt": "In \u201cZombie,\u201d which year does Dolores O\u2019Riordan name?",
+      "answer": "1916",
+      "wrong": [
+        "1969",
+        "1922",
+        "1949"
+      ],
+      "song": "Zombie",
+      "artist": "The Cranberries",
+      "year": 1994,
+      "era": "90s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "no-diggity",
+      "prompt": "Blackstreet says there\u2019s no diggity, and no what?",
+      "answer": "Doubt",
+      "wrong": [
+        "Limit",
+        "Problem",
+        "Question"
+      ],
+      "song": "No Diggity",
+      "artist": "Blackstreet ft. Dr. Dre",
+      "year": 1996,
+      "era": "90s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ironic",
+      "prompt": "In \u201cIronic,\u201d how many spoons does Alanis Morissette find when all she needs is a knife?",
+      "answer": "Ten thousand",
+      "wrong": [
+        "A hundred",
+        "A thousand",
+        "A million"
+      ],
+      "song": "Ironic",
+      "artist": "Alanis Morissette",
+      "year": 1995,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "whats-up",
+      "prompt": "4 Non Blondes\u2019 song is titled \u201cWhat\u2019s Up?\u201d \u2014 but what does the chorus actually scream?",
+      "answer": "What\u2019s going on",
+      "wrong": [
+        "What\u2019s up",
+        "What\u2019s the point",
+        "What now"
+      ],
+      "song": "What\u2019s Up?",
+      "artist": "4 Non Blondes",
+      "year": 1992,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "jump-around",
+      "prompt": "In \u201cJump Around,\u201d what does House of Pain do before they begin?",
+      "answer": "Pack it up and pack it in",
+      "wrong": [
+        "Turn it up and tune it out",
+        "Line it up and knock it down",
+        "Shut it down and lock it up"
+      ],
+      "song": "Jump Around",
+      "artist": "House of Pain",
+      "year": 1992,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mmmbop",
+      "prompt": "Which of these is NOT one of the Hanson brothers behind \u201cMMMBop\u201d?",
+      "answer": "Jordan",
+      "wrong": [
+        "Taylor",
+        "Isaac",
+        "Zac"
+      ],
+      "song": "MMMBop",
+      "artist": "Hanson",
+      "year": 1997,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "macarena",
+      "prompt": "The duo behind \u201cMacarena\u201d came from which country?",
+      "answer": "Spain",
+      "wrong": [
+        "Mexico",
+        "Cuba",
+        "Puerto Rico"
+      ],
+      "song": "Macarena",
+      "artist": "Los del R\u00edo",
+      "year": 1993,
+      "era": "90s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "vogue",
+      "prompt": "In \u201cVogue,\u201d what does Madonna tell you to do when nothing can save you?",
+      "answer": "Strike a pose",
+      "wrong": [
+        "Dance alone",
+        "Close your eyes",
+        "Let it go"
+      ],
+      "song": "Vogue",
+      "artist": "Madonna",
+      "year": 1990,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "nothing-compares",
+      "prompt": "Who wrote \u201cNothing Compares 2 U,\u201d the song Sin\u00e9ad O\u2019Connor took to number one?",
+      "answer": "Prince",
+      "wrong": [
+        "Elton John",
+        "Peter Gabriel",
+        "Van Morrison"
+      ],
+      "song": "Nothing Compares 2 U",
+      "artist": "Sin\u00e9ad O\u2019Connor",
+      "year": 1990,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cant-touch-this",
+      "prompt": "\u201cU Can\u2019t Touch This\u201d is built on which Rick James song?",
+      "answer": "Super Freak",
+      "wrong": [
+        "Give It to Me Baby",
+        "Mary Jane",
+        "Cold Blooded"
+      ],
+      "song": "U Can\u2019t Touch This",
+      "artist": "MC Hammer",
+      "year": 1990,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ice-ice-baby",
+      "prompt": "The bassline in \u201cIce Ice Baby\u201d is lifted from which song?",
+      "answer": "Under Pressure",
+      "wrong": [
+        "Another One Bites the Dust",
+        "Billie Jean",
+        "Let\u2019s Dance"
+      ],
+      "song": "Ice Ice Baby",
+      "artist": "Vanilla Ice",
+      "year": 1990,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "losing-religion",
+      "prompt": "Which instrument carries the main riff of \u201cLosing My Religion\u201d?",
+      "answer": "A mandolin",
+      "wrong": [
+        "A banjo",
+        "A sitar",
+        "A twelve-string guitar"
+      ],
+      "song": "Losing My Religion",
+      "artist": "R.E.M.",
+      "year": 1991,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "man-on-moon",
+      "prompt": "R.E.M.\u2019s \u201cMan on the Moon\u201d is a tribute to which comedian?",
+      "answer": "Andy Kaufman",
+      "wrong": [
+        "John Belushi",
+        "Bill Hicks",
+        "Sam Kinison"
+      ],
+      "song": "Man on the Moon",
+      "artist": "R.E.M.",
+      "year": 1992,
+      "era": "90s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "under-bridge",
+      "prompt": "Which city does Anthony Kiedis say he never wants to feel alone in?",
+      "answer": "Los Angeles",
+      "wrong": [
+        "New York",
+        "San Francisco",
+        "Seattle"
+      ],
+      "song": "Under the Bridge",
+      "artist": "Red Hot Chili Peppers",
+      "year": 1991,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "black-hole-sun",
+      "prompt": "Which Soundgarden single asks the sun to come and wash away the rain?",
+      "answer": "Black Hole Sun",
+      "wrong": [
+        "Spoonman",
+        "Fell on Black Days",
+        "Outshined"
+      ],
+      "song": "Black Hole Sun",
+      "artist": "Soundgarden",
+      "year": 1994,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "jeremy",
+      "prompt": "Which Pearl Jam song is about a boy who spoke in class today?",
+      "answer": "Jeremy",
+      "wrong": [
+        "Alive",
+        "Even Flow",
+        "Black"
+      ],
+      "song": "Jeremy",
+      "artist": "Pearl Jam",
+      "year": 1992,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "come-as-you-are",
+      "prompt": "Which Nirvana single invites you to come as you are, as a friend?",
+      "answer": "Come As You Are",
+      "wrong": [
+        "Lithium",
+        "In Bloom",
+        "Heart-Shaped Box"
+      ],
+      "song": "Come As You Are",
+      "artist": "Nirvana",
+      "year": 1991,
+      "era": "90s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "man-in-the-box",
+      "prompt": "Alice in Chains\u2019 breakthrough single runs the guitar through a talk box. Which one?",
+      "answer": "Man in the Box",
+      "wrong": [
+        "Rooster",
+        "Would?",
+        "Down in a Hole"
+      ],
+      "song": "Man in the Box",
+      "artist": "Alice in Chains",
+      "year": 1990,
+      "era": "90s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "basket-case",
+      "prompt": "Which Green Day single wonders whether he is just stoned or going crazy?",
+      "answer": "Basket Case",
+      "wrong": [
+        "Longview",
+        "When I Come Around",
+        "Welcome to Paradise"
+      ],
+      "song": "Basket Case",
+      "artist": "Green Day",
+      "year": 1994,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "come-out-play",
+      "prompt": "Which Offspring single keeps telling you to keep \u2019em separated?",
+      "answer": "Come Out and Play",
+      "wrong": [
+        "Self Esteem",
+        "Gotta Get Away",
+        "Bad Habit"
+      ],
+      "song": "Come Out and Play",
+      "artist": "The Offspring",
+      "year": 1994,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "loser",
+      "prompt": "In \u201cLoser,\u201d what does Beck invite you to do to him?",
+      "answer": "Kill him",
+      "wrong": [
+        "Leave him",
+        "Forget him",
+        "Find him"
+      ],
+      "song": "Loser",
+      "artist": "Beck",
+      "year": 1993,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sabotage",
+      "prompt": "Which director shot the Beastie Boys\u2019 seventies cop-show spoof for \u201cSabotage\u201d?",
+      "answer": "Spike Jonze",
+      "wrong": [
+        "Michel Gondry",
+        "Spike Lee",
+        "David Fincher"
+      ],
+      "song": "Sabotage",
+      "artist": "Beastie Boys",
+      "year": 1994,
+      "era": "90s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "california-love",
+      "prompt": "Who shares the hook on 2Pac\u2019s \u201cCalifornia Love\u201d?",
+      "answer": "Dr. Dre",
+      "wrong": [
+        "Snoop Dogg",
+        "Nate Dogg",
+        "Warren G"
+      ],
+      "song": "California Love",
+      "artist": "2Pac",
+      "year": 1995,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "changes-2pac",
+      "prompt": "2Pac\u2019s \u201cChanges\u201d is built on which Bruce Hornsby song?",
+      "answer": "The Way It Is",
+      "wrong": [
+        "Mandolin Rain",
+        "Every Little Kiss",
+        "The Valley Road"
+      ],
+      "song": "Changes",
+      "artist": "2Pac",
+      "year": 1998,
+      "era": "90s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "juicy",
+      "prompt": "Which Notorious B.I.G. song opens by dedicating itself to the teachers who doubted him?",
+      "answer": "Juicy",
+      "wrong": [
+        "Big Poppa",
+        "Hypnotize",
+        "One More Chance"
+      ],
+      "song": "Juicy",
+      "artist": "The Notorious B.I.G.",
+      "year": 1994,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "ill-be-missing-you",
+      "prompt": "\u201cI\u2019ll Be Missing You\u201d is built on which Police song?",
+      "answer": "Every Breath You Take",
+      "wrong": [
+        "Roxanne",
+        "Message in a Bottle",
+        "King of Pain"
+      ],
+      "song": "I\u2019ll Be Missing You",
+      "artist": "Puff Daddy & Faith Evans",
+      "year": 1997,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gin-juice",
+      "prompt": "In \u201cGin and Juice,\u201d what does Snoop have his mind on?",
+      "answer": "His money",
+      "wrong": [
+        "His car",
+        "His crew",
+        "The weekend"
+      ],
+      "song": "Gin and Juice",
+      "artist": "Snoop Doggy Dogg",
+      "year": 1994,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "waterfalls",
+      "prompt": "What does TLC warn you not to go chasing?",
+      "answer": "Waterfalls",
+      "wrong": [
+        "Shadows",
+        "Rainbows",
+        "Diamonds"
+      ],
+      "song": "Waterfalls",
+      "artist": "TLC",
+      "year": 1994,
+      "era": "90s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "no-scrubs",
+      "prompt": "According to TLC, a scrub is a guy who does what?",
+      "answer": "Thinks he\u2019s fly",
+      "wrong": [
+        "Never calls",
+        "Borrows money",
+        "Still lives at home"
+      ],
+      "song": "No Scrubs",
+      "artist": "TLC",
+      "year": 1999,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "wannabe",
+      "prompt": "What do the Spice Girls really, really, really want?",
+      "answer": "Zig-a-zig-ah",
+      "wrong": [
+        "A good time",
+        "To be free",
+        "To be friends"
+      ],
+      "song": "Wannabe",
+      "artist": "Spice Girls",
+      "year": 1996,
+      "era": "90s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "say-my-name",
+      "prompt": "Which Destiny\u2019s Child single accuses someone of acting kind of shady?",
+      "answer": "Say My Name",
+      "wrong": [
+        "Bills, Bills, Bills",
+        "Jumpin\u2019 Jumpin\u2019",
+        "Bug a Boo"
+      ],
+      "song": "Say My Name",
+      "artist": "Destiny\u2019s Child",
+      "year": 1999,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "believe-cher",
+      "prompt": "Cher\u2019s \u201cBelieve\u201d is credited with popularising which studio effect?",
+      "answer": "Auto-Tune",
+      "wrong": [
+        "The talk box",
+        "Reverse reverb",
+        "Gated drums"
+      ],
+      "song": "Believe",
+      "artist": "Cher",
+      "year": 1998,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "my-heart-go-on",
+      "prompt": "\u201cMy Heart Will Go On\u201d was the theme to which film?",
+      "answer": "Titanic",
+      "wrong": [
+        "The English Patient",
+        "Braveheart",
+        "Message in a Bottle"
+      ],
+      "song": "My Heart Will Go On",
+      "artist": "Celine Dion",
+      "year": 1997,
+      "era": "90s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "always-love-you",
+      "prompt": "Whitney Houston\u2019s \u201cI Will Always Love You\u201d was written by whom?",
+      "answer": "Dolly Parton",
+      "wrong": [
+        "Carole King",
+        "Diane Warren",
+        "Linda Ronstadt"
+      ],
+      "song": "I Will Always Love You",
+      "artist": "Whitney Houston",
+      "year": 1992,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "smooth-santana",
+      "prompt": "Who sings lead on Santana\u2019s \u201cSmooth\u201d?",
+      "answer": "Rob Thomas",
+      "wrong": [
+        "Everlast",
+        "Dave Matthews",
+        "Chris Cornell"
+      ],
+      "song": "Smooth",
+      "artist": "Santana ft. Rob Thomas",
+      "year": 1999,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "baby-got-back",
+      "prompt": "Which 1992 hit opens with two women gossiping about a stranger\u2019s figure?",
+      "answer": "Baby Got Back",
+      "wrong": [
+        "Rump Shaker",
+        "Jump",
+        "Whoomp! (There It Is)"
+      ],
+      "song": "Baby Got Back",
+      "artist": "Sir Mix-a-Lot",
+      "year": 1992,
+      "era": "90s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "what-is-love",
+      "prompt": "Which song soundtracked the head-bobbing sketch that became A Night at the Roxbury?",
+      "answer": "What Is Love",
+      "wrong": [
+        "Blue (Da Ba Dee)",
+        "Rhythm Is a Dancer",
+        "Be My Lover"
+      ],
+      "song": "What Is Love",
+      "artist": "Haddaway",
+      "year": 1993,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "song-2",
+      "prompt": "Which Blur single is known almost entirely for its shouted woo-hoo?",
+      "answer": "Song 2",
+      "wrong": [
+        "Girls & Boys",
+        "Parklife",
+        "Coffee & TV"
+      ],
+      "song": "Song 2",
+      "artist": "Blur",
+      "year": 1997,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "karma-police",
+      "prompt": "Which Radiohead single warns that this is what you get when you mess with us?",
+      "answer": "Karma Police",
+      "wrong": [
+        "No Surprises",
+        "Creep",
+        "Paranoid Android"
+      ],
+      "song": "Karma Police",
+      "artist": "Radiohead",
+      "year": 1997,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "killing-in-name",
+      "prompt": "Which Rage Against the Machine song ends with a famously repeated refusal?",
+      "answer": "Killing in the Name",
+      "wrong": [
+        "Bulls on Parade",
+        "Guerrilla Radio",
+        "Bombtrack"
+      ],
+      "song": "Killing in the Name",
+      "artist": "Rage Against the Machine",
+      "year": 1992,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "mr-jones",
+      "prompt": "In \u201cMr. Jones,\u201d who does Counting Crows say they want to be?",
+      "answer": "Bob Dylan",
+      "wrong": [
+        "Elvis Presley",
+        "Mick Jagger",
+        "Van Morrison"
+      ],
+      "song": "Mr. Jones",
+      "artist": "Counting Crows",
+      "year": 1993,
+      "era": "90s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "one-headlight",
+      "prompt": "The Wallflowers\u2019 frontman is the son of which musician?",
+      "answer": "Bob Dylan",
+      "wrong": [
+        "Neil Young",
+        "Tom Petty",
+        "Jackson Browne"
+      ],
+      "song": "One Headlight",
+      "artist": "The Wallflowers",
+      "year": 1996,
+      "era": "90s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "iris",
+      "prompt": "\u201cIris\u201d by the Goo Goo Dolls was written for which film?",
+      "answer": "City of Angels",
+      "wrong": [
+        "Armageddon",
+        "Message in a Bottle",
+        "Meet Joe Black"
+      ],
+      "song": "Iris",
+      "artist": "Goo Goo Dolls",
+      "year": 1998,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "you-oughta-know",
+      "prompt": "Which two Red Hot Chili Peppers played on \u201cYou Oughta Know\u201d?",
+      "answer": "Flea and Dave Navarro",
+      "wrong": [
+        "Anthony Kiedis and Chad Smith",
+        "Flea and John Frusciante",
+        "Chad Smith and Dave Navarro"
+      ],
+      "song": "You Oughta Know",
+      "artist": "Alanis Morissette",
+      "year": 1995,
+      "era": "90s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "dont-speak",
+      "prompt": "Which No Doubt ballad asks you not to tell her, because it hurts?",
+      "answer": "Don\u2019t Speak",
+      "wrong": [
+        "Just a Girl",
+        "Spiderwebs",
+        "Sunday Morning"
+      ],
+      "song": "Don\u2019t Speak",
+      "artist": "No Doubt",
+      "year": 1996,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "closing-time",
+      "prompt": "What does Semisonic say every new beginning comes from?",
+      "answer": "Some other beginning\u2019s end",
+      "wrong": [
+        "A long goodbye",
+        "A closed door",
+        "An empty room"
+      ],
+      "song": "Closing Time",
+      "artist": "Semisonic",
+      "year": 1998,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "one-week",
+      "prompt": "Which band rattled off a rapid-fire verse about Chinese chicken and the X-Files?",
+      "answer": "Barenaked Ladies",
+      "wrong": [
+        "Smash Mouth",
+        "Sugar Ray",
+        "Crash Test Dummies"
+      ],
+      "song": "One Week",
+      "artist": "Barenaked Ladies",
+      "year": 1998,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "virtual-insanity",
+      "prompt": "The \u201cVirtual Insanity\u201d video appears to show the floor doing what?",
+      "answer": "Sliding around the room",
+      "wrong": [
+        "Catching fire",
+        "Flooding",
+        "Vanishing"
+      ],
+      "song": "Virtual Insanity",
+      "artist": "Jamiroquai",
+      "year": 1996,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lovefool",
+      "prompt": "Which Swedish band begged you to love me, love me, say that you love me?",
+      "answer": "The Cardigans",
+      "wrong": [
+        "Ace of Base",
+        "Roxette",
+        "The Hives"
+      ],
+      "song": "Lovefool",
+      "artist": "The Cardigans",
+      "year": 1996,
+      "era": "90s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lose-yourself",
+      "prompt": "In \u201cLose Yourself,\u201d what does Eminem say is already on his sweater?",
+      "answer": "Vomit",
+      "wrong": [
+        "Spaghetti sauce",
+        "Blood",
+        "Beer"
+      ],
+      "song": "Lose Yourself",
+      "artist": "Eminem",
+      "year": 2002,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "brightside",
+      "prompt": "In \u201cMr. Brightside,\u201d how is Brandon Flowers doing now that he\u2019s coming out of his cage?",
+      "answer": "Just fine",
+      "wrong": [
+        "Not great",
+        "Better than ever",
+        "About the same"
+      ],
+      "song": "Mr. Brightside",
+      "artist": "The Killers",
+      "year": 2004,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hollaback",
+      "prompt": "What fruit does Gwen Stefani spell out in \u201cHollaback Girl\u201d?",
+      "answer": "Bananas",
+      "wrong": [
+        "Cherries",
+        "Coconuts",
+        "Mangoes"
+      ],
+      "song": "Hollaback Girl",
+      "artist": "Gwen Stefani",
+      "year": 2005,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "tik-tok",
+      "prompt": "In \u201cTiK ToK,\u201d Kesha kicks the guys to the curb unless they look like whom?",
+      "answer": "Mick Jagger",
+      "wrong": [
+        "David Bowie",
+        "Brad Pitt",
+        "Bob Dylan"
+      ],
+      "song": "TiK ToK",
+      "artist": "Kesha",
+      "year": 2009,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hey-ya",
+      "prompt": "In \u201cHey Ya!,\u201d what does OutKast tell you to shake it like?",
+      "answer": "A Polaroid picture",
+      "wrong": [
+        "A tambourine",
+        "A soda can",
+        "A bad habit"
+      ],
+      "song": "Hey Ya!",
+      "artist": "OutKast",
+      "year": 2003,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "umbrella",
+      "prompt": "Which word does Rihanna repeat right after \u201cumbrella\u201d?",
+      "answer": "Ella",
+      "wrong": [
+        "Rella",
+        "Yella",
+        "Fella"
+      ],
+      "song": "Umbrella",
+      "artist": "Rihanna ft. Jay-Z",
+      "year": 2007,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "in-da-club",
+      "prompt": "Who produced 50 Cent\u2019s \u201cIn Da Club\u201d?",
+      "answer": "Dr. Dre",
+      "wrong": [
+        "Timbaland",
+        "The Neptunes",
+        "Swizz Beatz"
+      ],
+      "song": "In Da Club",
+      "artist": "50 Cent",
+      "year": 2003,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "rehab",
+      "prompt": "In \u201cRehab,\u201d what is Amy Winehouse\u2019s answer when they try to make her go?",
+      "answer": "No, no, no",
+      "wrong": [
+        "Not today",
+        "Maybe later",
+        "Never again"
+      ],
+      "song": "Rehab",
+      "artist": "Amy Winehouse",
+      "year": 2006,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "chasing-cars",
+      "prompt": "In \u201cChasing Cars,\u201d what does Snow Patrol ask you to do and just forget the world?",
+      "answer": "Lie here with me",
+      "wrong": [
+        "Run away with me",
+        "Sit still with me",
+        "Drive all night"
+      ],
+      "song": "Chasing Cars",
+      "artist": "Snow Patrol",
+      "year": 2006,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "single-ladies",
+      "prompt": "In \u201cSingle Ladies,\u201d what should he have done?",
+      "answer": "Put a ring on it",
+      "wrong": [
+        "Called her back",
+        "Said it out loud",
+        "Shown up on time"
+      ],
+      "song": "Single Ladies (Put a Ring on It)",
+      "artist": "Beyonc\u00e9",
+      "year": 2008,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "hips-dont-lie",
+      "prompt": "Which rapper features on Shakira\u2019s \u201cHips Don\u2019t Lie\u201d?",
+      "answer": "Wyclef Jean",
+      "wrong": [
+        "Pitbull",
+        "Nelly",
+        "Sean Paul"
+      ],
+      "song": "Hips Don\u2019t Lie",
+      "artist": "Shakira ft. Wyclef Jean",
+      "year": 2006,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "boulevard",
+      "prompt": "\u201cBoulevard of Broken Dreams\u201d comes from which Green Day album?",
+      "answer": "American Idiot",
+      "wrong": [
+        "Dookie",
+        "Nimrod",
+        "Warning"
+      ],
+      "song": "Boulevard of Broken Dreams",
+      "artist": "Green Day",
+      "year": 2004,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "toxic",
+      "prompt": "In \u201cToxic,\u201d Britney Spears says the taste of his lips is a poison what?",
+      "answer": "Paradise",
+      "wrong": [
+        "Promise",
+        "Perfume",
+        "Potion"
+      ],
+      "song": "Toxic",
+      "artist": "Britney Spears",
+      "year": 2003,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "seven-nation",
+      "prompt": "The riff on \u201cSeven Nation Army\u201d sounds like a bass. What actually played it?",
+      "answer": "A guitar through an octave pedal",
+      "wrong": [
+        "A bass guitar",
+        "An analog synth",
+        "A cello"
+      ],
+      "song": "Seven Nation Army",
+      "artist": "The White Stripes",
+      "year": 2003,
+      "era": "00s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "since-u-been",
+      "prompt": "Which Swedish producer co-wrote Kelly Clarkson\u2019s \u201cSince U Been Gone\u201d?",
+      "answer": "Max Martin",
+      "wrong": [
+        "Stargate",
+        "Avicii",
+        "Shellback"
+      ],
+      "song": "Since U Been Gone",
+      "artist": "Kelly Clarkson",
+      "year": 2004,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "crazy-in-love",
+      "prompt": "The horn stab that opens \u201cCrazy in Love\u201d is lifted from which group?",
+      "answer": "The Chi-Lites",
+      "wrong": [
+        "The Isley Brothers",
+        "The Spinners",
+        "The O\u2019Jays"
+      ],
+      "song": "Crazy in Love",
+      "artist": "Beyonc\u00e9 ft. Jay-Z",
+      "year": 2003,
+      "era": "00s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "gaga-debut",
+      "prompt": "What was the title of Lady Gaga\u2019s debut album?",
+      "answer": "The Fame",
+      "wrong": [
+        "Born This Way",
+        "Artpop",
+        "Cheek to Cheek"
+      ],
+      "song": "Just Dance",
+      "artist": "Lady Gaga",
+      "year": 2008,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bye-bye-bye",
+      "prompt": "Which NSYNC single is remembered for its marionette-strings video?",
+      "answer": "Bye Bye Bye",
+      "wrong": [
+        "It\u2019s Gonna Be Me",
+        "Tearin\u2019 Up My Heart",
+        "Pop"
+      ],
+      "song": "Bye Bye Bye",
+      "artist": "NSYNC",
+      "year": 2000,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "gonna-be-me",
+      "prompt": "Justin Timberlake\u2019s pronunciation in which NSYNC song spawned a yearly meme?",
+      "answer": "It\u2019s Gonna Be Me",
+      "wrong": [
+        "Bye Bye Bye",
+        "Girlfriend",
+        "This I Promise You"
+      ],
+      "song": "It\u2019s Gonna Be Me",
+      "artist": "NSYNC",
+      "year": 2000,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "oops-again",
+      "prompt": "Which Britney Spears single has her insisting she is not that innocent?",
+      "answer": "Oops!... I Did It Again",
+      "wrong": [
+        "Stronger",
+        "Lucky",
+        "Crazy"
+      ],
+      "song": "Oops!... I Did It Again",
+      "artist": "Britney Spears",
+      "year": 2000,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "bootylicious",
+      "prompt": "\u201cBootylicious\u201d is built on a guitar riff from which Stevie Nicks song?",
+      "answer": "Edge of Seventeen",
+      "wrong": [
+        "Stand Back",
+        "Rhiannon",
+        "Dreams"
+      ],
+      "song": "Bootylicious",
+      "artist": "Destiny\u2019s Child",
+      "year": 2001,
+      "era": "00s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "lady-marmalade",
+      "prompt": "The 2001 \u201cLady Marmalade\u201d remake came from which film?",
+      "answer": "Moulin Rouge!",
+      "wrong": [
+        "Chicago",
+        "Burlesque",
+        "Coyote Ugly"
+      ],
+      "song": "Lady Marmalade",
+      "artist": "Christina Aguilera, Lil\u2019 Kim, M\u00fda & Pink",
+      "year": 2001,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sk8er-boi",
+      "prompt": "In \u201cSk8er Boi,\u201d what did the girl say when the boy asked her out?",
+      "answer": "See you later, boy",
+      "wrong": [
+        "Yes",
+        "Not a chance",
+        "Ask me tomorrow"
+      ],
+      "song": "Sk8er Boi",
+      "artist": "Avril Lavigne",
+      "year": 2002,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "the-middle",
+      "prompt": "Which band told you everything would be just fine, just do your best?",
+      "answer": "Jimmy Eat World",
+      "wrong": [
+        "Blink-182",
+        "New Found Glory",
+        "Sum 41"
+      ],
+      "song": "The Middle",
+      "artist": "Jimmy Eat World",
+      "year": 2001,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "in-the-end",
+      "prompt": "Which Linkin Park single concludes that it does not even matter?",
+      "answer": "In the End",
+      "wrong": [
+        "Crawling",
+        "One Step Closer",
+        "Numb"
+      ],
+      "song": "In the End",
+      "artist": "Linkin Park",
+      "year": 2000,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "chop-suey",
+      "prompt": "Which System of a Down single opens with an instruction to wake up and grab a brush?",
+      "answer": "Chop Suey!",
+      "wrong": [
+        "Toxicity",
+        "Aerials",
+        "B.Y.O.B."
+      ],
+      "song": "Chop Suey!",
+      "artist": "System of a Down",
+      "year": 2001,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bring-me-to-life",
+      "prompt": "Who sings the male vocals on Evanescence\u2019s \u201cBring Me to Life\u201d?",
+      "answer": "Paul McCoy of 12 Stones",
+      "wrong": [
+        "Chester Bennington",
+        "Chad Kroeger",
+        "Scott Stapp"
+      ],
+      "song": "Bring Me to Life",
+      "artist": "Evanescence",
+      "year": 2003,
+      "era": "00s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "black-parade",
+      "prompt": "Which My Chemical Romance single begins with a single repeated piano note?",
+      "answer": "Welcome to the Black Parade",
+      "wrong": [
+        "Helena",
+        "I\u2019m Not Okay",
+        "Teenagers"
+      ],
+      "song": "Welcome to the Black Parade",
+      "artist": "My Chemical Romance",
+      "year": 2006,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "misery-business",
+      "prompt": "Which single was Paramore\u2019s breakout hit in 2007?",
+      "answer": "Misery Business",
+      "wrong": [
+        "Decode",
+        "Ignorance",
+        "That\u2019s What You Get"
+      ],
+      "song": "Misery Business",
+      "artist": "Paramore",
+      "year": 2007,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hey-there-delilah",
+      "prompt": "\u201cHey There Delilah\u201d asks what it is like in which city?",
+      "answer": "New York City",
+      "wrong": [
+        "Chicago",
+        "Los Angeles",
+        "Boston"
+      ],
+      "song": "Hey There Delilah",
+      "artist": "Plain White T\u2019s",
+      "year": 2006,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "feel-good-inc",
+      "prompt": "Which hip hop group delivers the laugh and the verse on \u201cFeel Good Inc.\u201d?",
+      "answer": "De La Soul",
+      "wrong": [
+        "A Tribe Called Quest",
+        "The Pharcyde",
+        "Jurassic 5"
+      ],
+      "song": "Feel Good Inc.",
+      "artist": "Gorillaz",
+      "year": 2005,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "clint-eastwood",
+      "prompt": "Which Gorillaz single announces that the singer has sunshine in a bag?",
+      "answer": "Clint Eastwood",
+      "wrong": [
+        "Feel Good Inc.",
+        "DARE",
+        "19-2000"
+      ],
+      "song": "Clint Eastwood",
+      "artist": "Gorillaz",
+      "year": 2001,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "take-me-out",
+      "prompt": "Which Scottish band broke through in 2004 with a song that changes tempo halfway?",
+      "answer": "Franz Ferdinand",
+      "wrong": [
+        "The Fratellis",
+        "Travis",
+        "Snow Patrol"
+      ],
+      "song": "Take Me Out",
+      "artist": "Franz Ferdinand",
+      "year": 2004,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hot-in-herre",
+      "prompt": "Which Nelly single suggests it is getting hot, so take off all your clothes?",
+      "answer": "Hot in Herre",
+      "wrong": [
+        "Ride Wit Me",
+        "Dilemma",
+        "Country Grammar"
+      ],
+      "song": "Hot in Herre",
+      "artist": "Nelly",
+      "year": 2002,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "yeah-usher",
+      "prompt": "Which two guests appear on Usher\u2019s \u201cYeah!\u201d?",
+      "answer": "Lil Jon and Ludacris",
+      "wrong": [
+        "Lil Jon and T.I.",
+        "Ludacris and Young Jeezy",
+        "T-Pain and Ludacris"
+      ],
+      "song": "Yeah!",
+      "artist": "Usher",
+      "year": 2004,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gold-digger",
+      "prompt": "Which Ray Charles song is sampled on \u201cGold Digger\u201d?",
+      "answer": "I Got a Woman",
+      "wrong": [
+        "Hit the Road Jack",
+        "Georgia on My Mind",
+        "What\u2019d I Say"
+      ],
+      "song": "Gold Digger",
+      "artist": "Kanye West ft. Jamie Foxx",
+      "year": 2005,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "stronger-kanye",
+      "prompt": "Kanye West\u2019s \u201cStronger\u201d is built on which Daft Punk track?",
+      "answer": "Harder, Better, Faster, Stronger",
+      "wrong": [
+        "One More Time",
+        "Around the World",
+        "Da Funk"
+      ],
+      "song": "Stronger",
+      "artist": "Kanye West",
+      "year": 2007,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "through-the-wire",
+      "prompt": "What was physically true of Kanye West when he recorded \u201cThrough the Wire\u201d?",
+      "answer": "His jaw was wired shut",
+      "wrong": [
+        "He had lost his voice",
+        "He was in hospital with pneumonia",
+        "His hand was in a cast"
+      ],
+      "song": "Through the Wire",
+      "artist": "Kanye West",
+      "year": 2003,
+      "era": "00s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "drop-it-like",
+      "prompt": "Whose tongue click opens \u201cDrop It Like It\u2019s Hot\u201d?",
+      "answer": "Pharrell Williams",
+      "wrong": [
+        "Timbaland",
+        "Dr. Dre",
+        "Swizz Beatz"
+      ],
+      "song": "Drop It Like It\u2019s Hot",
+      "artist": "Snoop Dogg ft. Pharrell",
+      "year": 2004,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "crazy-gnarls",
+      "prompt": "Gnarls Barkley is CeeLo Green together with whom?",
+      "answer": "Danger Mouse",
+      "wrong": [
+        "Pharrell Williams",
+        "Mark Ronson",
+        "Timbaland"
+      ],
+      "song": "Crazy",
+      "artist": "Gnarls Barkley",
+      "year": 2006,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sexyback",
+      "prompt": "Which Justin Timberlake single claims to be bringing something back?",
+      "answer": "SexyBack",
+      "wrong": [
+        "Cry Me a River",
+        "Rock Your Body",
+        "My Love"
+      ],
+      "song": "SexyBack",
+      "artist": "Justin Timberlake",
+      "year": 2006,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "low-flo-rida",
+      "prompt": "In \u201cLow,\u201d what is she wearing with the fur?",
+      "answer": "Boots",
+      "wrong": [
+        "Gloves",
+        "A hood",
+        "A coat"
+      ],
+      "song": "Low",
+      "artist": "Flo Rida ft. T-Pain",
+      "year": 2007,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "right-round",
+      "prompt": "\u201cRight Round\u201d samples which eighties hit?",
+      "answer": "You Spin Me Round",
+      "wrong": [
+        "Tainted Love",
+        "Relax",
+        "Girls on Film"
+      ],
+      "song": "Right Round",
+      "artist": "Flo Rida",
+      "year": 2009,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bad-romance",
+      "prompt": "Which Lady Gaga single opens with a chant of rah rah?",
+      "answer": "Bad Romance",
+      "wrong": [
+        "Poker Face",
+        "Just Dance",
+        "Alejandro"
+      ],
+      "song": "Bad Romance",
+      "artist": "Lady Gaga",
+      "year": 2009,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "love-story-ts",
+      "prompt": "Which Shakespeare play does Taylor Swift rewrite with a happy ending?",
+      "answer": "Romeo and Juliet",
+      "wrong": [
+        "A Midsummer Night\u2019s Dream",
+        "Much Ado About Nothing",
+        "Twelfth Night"
+      ],
+      "song": "Love Story",
+      "artist": "Taylor Swift",
+      "year": 2008,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "before-he-cheats",
+      "prompt": "In \u201cBefore He Cheats,\u201d what does Carrie Underwood take to his headlights?",
+      "answer": "A Louisville slugger",
+      "wrong": [
+        "A set of keys",
+        "A brick",
+        "A crowbar"
+      ],
+      "song": "Before He Cheats",
+      "artist": "Carrie Underwood",
+      "year": 2006,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "viva-la-vida",
+      "prompt": "Which Coldplay single opens with the admission that he used to rule the world?",
+      "answer": "Viva la Vida",
+      "wrong": [
+        "Clocks",
+        "Fix You",
+        "The Scientist"
+      ],
+      "song": "Viva la Vida",
+      "artist": "Coldplay",
+      "year": 2008,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "the-scientist",
+      "prompt": "What is unusual about the video for Coldplay\u2019s \u201cThe Scientist\u201d?",
+      "answer": "It runs in reverse",
+      "wrong": [
+        "It is entirely black and white",
+        "It has no people in it",
+        "It was shot in one take"
+      ],
+      "song": "The Scientist",
+      "artist": "Coldplay",
+      "year": 2002,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "irreplaceable",
+      "prompt": "In \u201cIrreplaceable,\u201d where does Beyonc\u00e9 say everything he owns is?",
+      "answer": "To the left",
+      "wrong": [
+        "In the hall",
+        "On the porch",
+        "By the door"
+      ],
+      "song": "Irreplaceable",
+      "artist": "Beyonc\u00e9",
+      "year": 2006,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "how-you-remind",
+      "prompt": "Which Nickelback single asks if this is how you remind him what he really is?",
+      "answer": "How You Remind Me",
+      "wrong": [
+        "Photograph",
+        "Rockstar",
+        "Far Away"
+      ],
+      "song": "How You Remind Me",
+      "artist": "Nickelback",
+      "year": 2001,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "kryptonite",
+      "prompt": "Which band wondered whether you would still call them Superman?",
+      "answer": "3 Doors Down",
+      "wrong": [
+        "Nickelback",
+        "Creed",
+        "Puddle of Mudd"
+      ],
+      "song": "Kryptonite",
+      "artist": "3 Doors Down",
+      "year": 2000,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "youre-beautiful",
+      "prompt": "Which 2005 ballad made its singer so famous that he later joked about apologising for it?",
+      "answer": "You\u2019re Beautiful",
+      "wrong": [
+        "Bad Day",
+        "Chasing Cars",
+        "Fix You"
+      ],
+      "song": "You\u2019re Beautiful",
+      "artist": "James Blunt",
+      "year": 2005,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "empire-state",
+      "prompt": "Who sings the hook on Jay-Z\u2019s \u201cEmpire State of Mind\u201d?",
+      "answer": "Alicia Keys",
+      "wrong": [
+        "Beyonc\u00e9",
+        "Rihanna",
+        "Mary J. Blige"
+      ],
+      "song": "Empire State of Mind",
+      "artist": "Jay-Z ft. Alicia Keys",
+      "year": 2009,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "party-usa",
+      "prompt": "In \u201cParty in the U.S.A.,\u201d whose song comes on and saves the night?",
+      "answer": "Jay-Z",
+      "wrong": [
+        "Nelly",
+        "Kanye West",
+        "Lil Wayne"
+      ],
+      "song": "Party in the U.S.A.",
+      "artist": "Miley Cyrus",
+      "year": 2009,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "i-kissed-a-girl",
+      "prompt": "Which single was Katy Perry\u2019s breakout number one?",
+      "answer": "I Kissed a Girl",
+      "wrong": [
+        "Hot n Cold",
+        "Firework",
+        "Teenage Dream"
+      ],
+      "song": "I Kissed a Girl",
+      "artist": "Katy Perry",
+      "year": 2008,
+      "era": "00s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "crank-that",
+      "prompt": "Which 2007 hit came with its own instructional dance and a Superman move?",
+      "answer": "Crank That",
+      "wrong": [
+        "Chicken Noodle Soup",
+        "A Milli",
+        "Lean Wit It"
+      ],
+      "song": "Crank That (Soulja Boy)",
+      "artist": "Soulja Boy",
+      "year": 2007,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "somebody-told-me",
+      "prompt": "Which Killers single compares a boyfriend to a girlfriend from last February?",
+      "answer": "Somebody Told Me",
+      "wrong": [
+        "Mr. Brightside",
+        "When You Were Young",
+        "Read My Mind"
+      ],
+      "song": "Somebody Told Me",
+      "artist": "The Killers",
+      "year": 2004,
+      "era": "00s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "call-me-maybe",
+      "prompt": "In \u201cCall Me Maybe,\u201d what did Carly Rae Jepsen throw before she met you?",
+      "answer": "A wish in the well",
+      "wrong": [
+        "A coin in the fountain",
+        "A note in the fire",
+        "A stone in the lake"
+      ],
+      "song": "Call Me Maybe",
+      "artist": "Carly Rae Jepsen",
+      "year": 2012,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "somebody-knew",
+      "prompt": "Who sings the second verse of \u201cSomebody That I Used to Know\u201d?",
+      "answer": "Kimbra",
+      "wrong": [
+        "Sia",
+        "Lorde",
+        "Lykke Li"
+      ],
+      "song": "Somebody That I Used to Know",
+      "artist": "Gotye ft. Kimbra",
+      "year": 2011,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "royals",
+      "prompt": "In \u201cRoyals,\u201d what has Lorde never seen in the flesh?",
+      "answer": "A diamond",
+      "wrong": [
+        "A limousine",
+        "A gold chain",
+        "A tiger"
+      ],
+      "song": "Royals",
+      "artist": "Lorde",
+      "year": 2013,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "thrift-shop",
+      "prompt": "How much does Macklemore have in his pocket in \u201cThrift Shop\u201d?",
+      "answer": "Twenty dollars",
+      "wrong": [
+        "Fifty dollars",
+        "Five dollars",
+        "A hundred dollars"
+      ],
+      "song": "Thrift Shop",
+      "artist": "Macklemore & Ryan Lewis",
+      "year": 2012,
+      "era": "10s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "uptown-funk",
+      "prompt": "Bruno Mars sings \u201cUptown Funk,\u201d but whose single is it?",
+      "answer": "Mark Ronson",
+      "wrong": [
+        "Pharrell Williams",
+        "Calvin Harris",
+        "Diplo"
+      ],
+      "song": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "year": 2014,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "shake-it-off",
+      "prompt": "Players gonna play and haters gonna hate. What are the heartbreakers gonna do?",
+      "answer": "Break",
+      "wrong": [
+        "Lie",
+        "Leave",
+        "Cheat"
+      ],
+      "song": "Shake It Off",
+      "artist": "Taylor Swift",
+      "year": 2014,
+      "era": "10s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "old-town-road",
+      "prompt": "Who joined Lil Nas X on the remix that made \u201cOld Town Road\u201d unstoppable?",
+      "answer": "Billy Ray Cyrus",
+      "wrong": [
+        "Blake Shelton",
+        "Keith Urban",
+        "Luke Combs"
+      ],
+      "song": "Old Town Road",
+      "artist": "Lil Nas X",
+      "year": 2019,
+      "era": "10s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "bad-guy",
+      "prompt": "Which one-word tag ends every chorus of \u201cBad Guy\u201d?",
+      "answer": "Duh",
+      "wrong": [
+        "Huh",
+        "Yeah",
+        "Oof"
+      ],
+      "song": "Bad Guy",
+      "artist": "Billie Eilish",
+      "year": 2019,
+      "era": "10s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "closer",
+      "prompt": "In \u201cCloser,\u201d which band\u2019s song is playing on the stereo?",
+      "answer": "Blink-182",
+      "wrong": [
+        "Green Day",
+        "Sum 41",
+        "Jimmy Eat World"
+      ],
+      "song": "Closer",
+      "artist": "The Chainsmokers ft. Halsey",
+      "year": 2016,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pumped-up",
+      "prompt": "In \u201cPumped Up Kicks,\u201d what are you told to outrun?",
+      "answer": "My gun",
+      "wrong": [
+        "My car",
+        "My dogs",
+        "The sun"
+      ],
+      "song": "Pumped Up Kicks",
+      "artist": "Foster the People",
+      "year": 2011,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "happy",
+      "prompt": "Pharrell\u2019s \u201cHappy\u201d was written for which animated movie?",
+      "answer": "Despicable Me 2",
+      "wrong": [
+        "The Croods",
+        "Trolls",
+        "Rio 2"
+      ],
+      "song": "Happy",
+      "artist": "Pharrell Williams",
+      "year": 2013,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "gangnam",
+      "prompt": "\u201cGangnam Style\u201d was the first video ever to cross which YouTube milestone?",
+      "answer": "One billion views",
+      "wrong": [
+        "One hundred million views",
+        "Five hundred million views",
+        "Two billion views"
+      ],
+      "song": "Gangnam Style",
+      "artist": "PSY",
+      "year": 2012,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hello",
+      "prompt": "Adele says hello from where?",
+      "answer": "The other side",
+      "wrong": [
+        "Across the room",
+        "The old place",
+        "Down the line"
+      ],
+      "song": "Hello",
+      "artist": "Adele",
+      "year": 2015,
+      "era": "10s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "despacito",
+      "prompt": "Which Canadian singer jumped on the \u201cDespacito\u201d remix?",
+      "answer": "Justin Bieber",
+      "wrong": [
+        "The Weeknd",
+        "Shawn Mendes",
+        "Drake"
+      ],
+      "song": "Despacito",
+      "artist": "Luis Fonsi & Daddy Yankee",
+      "year": 2017,
+      "era": "10s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "ho-hey",
+      "prompt": "In \u201cHo Hey,\u201d what do The Lumineers call you?",
+      "answer": "Sweetheart",
+      "wrong": [
+        "Darling",
+        "Their only one",
+        "Their whole world"
+      ],
+      "song": "Ho Hey",
+      "artist": "The Lumineers",
+      "year": 2012,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "rolling-deep",
+      "prompt": "In \u201cRolling in the Deep,\u201d what does Adele say they could have had?",
+      "answer": "It all",
+      "wrong": [
+        "One more night",
+        "A second chance",
+        "Everything but this"
+      ],
+      "song": "Rolling in the Deep",
+      "artist": "Adele",
+      "year": 2010,
+      "era": "10s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "take-me-church",
+      "prompt": "Hozier\u2019s \u201cTake Me to Church\u201d was a debut single out of which country?",
+      "answer": "Ireland",
+      "wrong": [
+        "Scotland",
+        "Australia",
+        "New Zealand"
+      ],
+      "song": "Take Me to Church",
+      "artist": "Hozier",
+      "year": 2013,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "firework",
+      "prompt": "What does Katy Perry compare you to at the start of \u201cFirework\u201d?",
+      "answer": "A plastic bag",
+      "wrong": [
+        "A paper boat",
+        "A candle",
+        "A feather"
+      ],
+      "song": "Firework",
+      "artist": "Katy Perry",
+      "year": 2010,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "dark-horse",
+      "prompt": "Which rapper features on Katy Perry\u2019s \u201cDark Horse\u201d?",
+      "answer": "Juicy J",
+      "wrong": [
+        "2 Chainz",
+        "Snoop Dogg",
+        "Nicki Minaj"
+      ],
+      "song": "Dark Horse",
+      "artist": "Katy Perry",
+      "year": 2013,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "someone-like-you",
+      "prompt": "Which Adele ballad is built on almost nothing but a piano and her voice?",
+      "answer": "Someone Like You",
+      "wrong": [
+        "Rolling in the Deep",
+        "Set Fire to the Rain",
+        "Skyfall"
+      ],
+      "song": "Someone Like You",
+      "artist": "Adele",
+      "year": 2011,
+      "era": "10s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "skyfall",
+      "prompt": "Adele\u2019s \u201cSkyfall\u201d was the theme to which kind of film?",
+      "answer": "A James Bond film",
+      "wrong": [
+        "A Marvel film",
+        "A Pixar film",
+        "A Star Wars film"
+      ],
+      "song": "Skyfall",
+      "artist": "Adele",
+      "year": 2012,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "we-found-love",
+      "prompt": "Which DJ produced and features on Rihanna\u2019s \u201cWe Found Love\u201d?",
+      "answer": "Calvin Harris",
+      "wrong": [
+        "David Guetta",
+        "Avicii",
+        "Diplo"
+      ],
+      "song": "We Found Love",
+      "artist": "Rihanna",
+      "year": 2011,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "diamonds",
+      "prompt": "Who wrote Rihanna\u2019s \u201cDiamonds\u201d in about fourteen minutes?",
+      "answer": "Sia",
+      "wrong": [
+        "Katy Perry",
+        "Ester Dean",
+        "Taylor Swift"
+      ],
+      "song": "Diamonds",
+      "artist": "Rihanna",
+      "year": 2012,
+      "era": "10s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "chandelier",
+      "prompt": "The \u201cChandelier\u201d video stars which young dancer?",
+      "answer": "Maddie Ziegler",
+      "wrong": [
+        "Millie Bobby Brown",
+        "Elle Fanning",
+        "Sophia Lillis"
+      ],
+      "song": "Chandelier",
+      "artist": "Sia",
+      "year": 2014,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "titanium",
+      "prompt": "Who sings on David Guetta\u2019s \u201cTitanium\u201d?",
+      "answer": "Sia",
+      "wrong": [
+        "Rihanna",
+        "Ellie Goulding",
+        "Kelly Rowland"
+      ],
+      "song": "Titanium",
+      "artist": "David Guetta ft. Sia",
+      "year": 2011,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "wake-me-up",
+      "prompt": "Who sings lead on Avicii\u2019s \u201cWake Me Up\u201d?",
+      "answer": "Aloe Blacc",
+      "wrong": [
+        "John Legend",
+        "Sam Smith",
+        "CeeLo Green"
+      ],
+      "song": "Wake Me Up",
+      "artist": "Avicii",
+      "year": 2013,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "get-lucky",
+      "prompt": "Besides Pharrell, which guitar legend plays on Daft Punk\u2019s \u201cGet Lucky\u201d?",
+      "answer": "Nile Rodgers",
+      "wrong": [
+        "Carlos Santana",
+        "John Mayer",
+        "Slash"
+      ],
+      "song": "Get Lucky",
+      "artist": "Daft Punk",
+      "year": 2013,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "blurred-lines",
+      "prompt": "\u201cBlurred Lines\u201d lost a famous lawsuit brought over which Marvin Gaye song?",
+      "answer": "Got to Give It Up",
+      "wrong": [
+        "Let\u2019s Get It On",
+        "Sexual Healing",
+        "What\u2019s Going On"
+      ],
+      "song": "Blurred Lines",
+      "artist": "Robin Thicke",
+      "year": 2013,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "all-of-me",
+      "prompt": "John Legend wrote \u201cAll of Me\u201d for whom?",
+      "answer": "Chrissy Teigen",
+      "wrong": [
+        "His mother",
+        "His daughter",
+        "His producer"
+      ],
+      "song": "All of Me",
+      "artist": "John Legend",
+      "year": 2013,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "stay-with-me",
+      "prompt": "Which songwriter got a credit on \u201cStay with Me\u201d after a resemblance was noticed?",
+      "answer": "Tom Petty",
+      "wrong": [
+        "Bruce Springsteen",
+        "Neil Young",
+        "Don Henley"
+      ],
+      "song": "Stay with Me",
+      "artist": "Sam Smith",
+      "year": 2014,
+      "era": "10s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "thinking-out-loud",
+      "prompt": "Which Ed Sheeran ballad imagines still being loved at seventy?",
+      "answer": "Thinking Out Loud",
+      "wrong": [
+        "Perfect",
+        "Photograph",
+        "Castle on the Hill"
+      ],
+      "song": "Thinking Out Loud",
+      "artist": "Ed Sheeran",
+      "year": 2014,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "love-yourself",
+      "prompt": "Which singer co-wrote Justin Bieber\u2019s \u201cLove Yourself\u201d?",
+      "answer": "Ed Sheeran",
+      "wrong": [
+        "Shawn Mendes",
+        "Charlie Puth",
+        "Ryan Tedder"
+      ],
+      "song": "Love Yourself",
+      "artist": "Justin Bieber",
+      "year": 2015,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "baby-bieber",
+      "prompt": "Which rapper features on Justin Bieber\u2019s \u201cBaby\u201d?",
+      "answer": "Ludacris",
+      "wrong": [
+        "Drake",
+        "Nicki Minaj",
+        "Big Sean"
+      ],
+      "song": "Baby",
+      "artist": "Justin Bieber",
+      "year": 2010,
+      "era": "10s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "starboy",
+      "prompt": "Which duo produced and features on The Weeknd\u2019s \u201cStarboy\u201d?",
+      "answer": "Daft Punk",
+      "wrong": [
+        "Disclosure",
+        "The Chainsmokers",
+        "Major Lazer"
+      ],
+      "song": "Starboy",
+      "artist": "The Weeknd",
+      "year": 2016,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "see-you-again",
+      "prompt": "\u201cSee You Again\u201d was written as a tribute to which actor?",
+      "answer": "Paul Walker",
+      "wrong": [
+        "Heath Ledger",
+        "Chadwick Boseman",
+        "Philip Seymour Hoffman"
+      ],
+      "song": "See You Again",
+      "artist": "Wiz Khalifa ft. Charlie Puth",
+      "year": 2015,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "just-way-you-are",
+      "prompt": "Which Bruno Mars single insists she is amazing just the way she is?",
+      "answer": "Just the Way You Are",
+      "wrong": [
+        "Grenade",
+        "Treasure",
+        "Locked Out of Heaven"
+      ],
+      "song": "Just the Way You Are",
+      "artist": "Bruno Mars",
+      "year": 2010,
+      "era": "10s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "counting-stars",
+      "prompt": "Which band has been losing sleep, dreaming about the things that they could be?",
+      "answer": "OneRepublic",
+      "wrong": [
+        "Imagine Dragons",
+        "The Script",
+        "Train"
+      ],
+      "song": "Counting Stars",
+      "artist": "OneRepublic",
+      "year": 2013,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pompeii",
+      "prompt": "Which band asked if you ever wonder how it could have been, over a wall of chanting?",
+      "answer": "Bastille",
+      "wrong": [
+        "Imagine Dragons",
+        "Of Monsters and Men",
+        "Foster the People"
+      ],
+      "song": "Pompeii",
+      "artist": "Bastille",
+      "year": 2013,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "riptide",
+      "prompt": "Which ukulele-driven hit worries about a lady running down to the riptide?",
+      "answer": "Riptide",
+      "wrong": [
+        "Budapest",
+        "Ho Hey",
+        "Stolen Dance"
+      ],
+      "song": "Riptide",
+      "artist": "Vance Joy",
+      "year": 2013,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "we-are-young",
+      "prompt": "Who features on fun.\u2019s \u201cWe Are Young\u201d?",
+      "answer": "Janelle Mon\u00e1e",
+      "wrong": [
+        "Sia",
+        "Lorde",
+        "Haim"
+      ],
+      "song": "We Are Young",
+      "artist": "fun.",
+      "year": 2011,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "i-will-wait",
+      "prompt": "Which banjo-driven band promised that they would wait for you?",
+      "answer": "Mumford & Sons",
+      "wrong": [
+        "The Lumineers",
+        "The Avett Brothers",
+        "Of Monsters and Men"
+      ],
+      "song": "I Will Wait",
+      "artist": "Mumford & Sons",
+      "year": 2012,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "wagon-wheel",
+      "prompt": "\u201cWagon Wheel\u201d grew out of an unfinished sketch by which songwriter?",
+      "answer": "Bob Dylan",
+      "wrong": [
+        "Willie Nelson",
+        "Johnny Cash",
+        "Townes Van Zandt"
+      ],
+      "song": "Wagon Wheel",
+      "artist": "Darius Rucker",
+      "year": 2013,
+      "era": "10s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "damn-pulitzer",
+      "prompt": "Which Kendrick Lamar album won the Pulitzer Prize for Music?",
+      "answer": "DAMN.",
+      "wrong": [
+        "To Pimp a Butterfly",
+        "good kid, m.A.A.d city",
+        "Mr. Morale & the Big Steppers"
+      ],
+      "song": "HUMBLE.",
+      "artist": "Kendrick Lamar",
+      "year": 2017,
+      "era": "10s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "hotline-bling",
+      "prompt": "Which Drake single is remembered almost entirely for the dancing in its video?",
+      "answer": "Hotline Bling",
+      "wrong": [
+        "One Dance",
+        "God\u2019s Plan",
+        "Nice for What"
+      ],
+      "song": "Hotline Bling",
+      "artist": "Drake",
+      "year": 2015,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "in-my-feelings",
+      "prompt": "Which Drake song launched a viral challenge involving a moving car?",
+      "answer": "In My Feelings",
+      "wrong": [
+        "Nice for What",
+        "God\u2019s Plan",
+        "Started from the Bottom"
+      ],
+      "song": "In My Feelings",
+      "artist": "Drake",
+      "year": 2018,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "black-beatles",
+      "prompt": "Which song soundtracked the Mannequin Challenge?",
+      "answer": "Black Beatles",
+      "wrong": [
+        "Panda",
+        "Bad and Boujee",
+        "Juju on That Beat"
+      ],
+      "song": "Black Beatles",
+      "artist": "Rae Sremmurd",
+      "year": 2016,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bodak-yellow",
+      "prompt": "Which Cardi B single was her first number one?",
+      "answer": "Bodak Yellow",
+      "wrong": [
+        "I Like It",
+        "Money",
+        "Up"
+      ],
+      "song": "Bodak Yellow",
+      "artist": "Cardi B",
+      "year": 2017,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sunflower",
+      "prompt": "\u201cSunflower\u201d was the lead single from which animated film?",
+      "answer": "Spider-Man: Into the Spider-Verse",
+      "wrong": [
+        "The Lego Movie 2",
+        "Ralph Breaks the Internet",
+        "Incredibles 2"
+      ],
+      "song": "Sunflower",
+      "artist": "Post Malone & Swae Lee",
+      "year": 2018,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "rockstar-post",
+      "prompt": "Which rapper features on Post Malone\u2019s \u201cRockstar\u201d?",
+      "answer": "21 Savage",
+      "wrong": [
+        "Travis Scott",
+        "Quavo",
+        "Ty Dolla $ign"
+      ],
+      "song": "Rockstar",
+      "artist": "Post Malone",
+      "year": 2017,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "seven-rings",
+      "prompt": "\u201c7 Rings\u201d interpolates a song from which musical?",
+      "answer": "The Sound of Music",
+      "wrong": [
+        "West Side Story",
+        "Oklahoma!",
+        "My Fair Lady"
+      ],
+      "song": "7 Rings",
+      "artist": "Ariana Grande",
+      "year": 2019,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "shallow",
+      "prompt": "\u201cShallow\u201d came from which 2018 film?",
+      "answer": "A Star Is Born",
+      "wrong": [
+        "Bohemian Rhapsody",
+        "The Greatest Showman",
+        "First Man"
+      ],
+      "song": "Shallow",
+      "artist": "Lady Gaga & Bradley Cooper",
+      "year": 2018,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "look-what-you",
+      "prompt": "\u201cLook What You Made Me Do\u201d interpolates which nineties novelty hit?",
+      "answer": "I\u2019m Too Sexy",
+      "wrong": [
+        "Macarena",
+        "Barbie Girl",
+        "Cotton Eye Joe"
+      ],
+      "song": "Look What You Made Me Do",
+      "artist": "Taylor Swift",
+      "year": 2017,
+      "era": "10s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "bad-blood",
+      "prompt": "Which rapper joined Taylor Swift on the single version of \u201cBad Blood\u201d?",
+      "answer": "Kendrick Lamar",
+      "wrong": [
+        "Drake",
+        "Future",
+        "Travis Scott"
+      ],
+      "song": "Bad Blood",
+      "artist": "Taylor Swift",
+      "year": 2015,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "havana",
+      "prompt": "Which rapper features on Camila Cabello\u2019s \u201cHavana\u201d?",
+      "answer": "Young Thug",
+      "wrong": [
+        "Travis Scott",
+        "Quavo",
+        "Lil Baby"
+      ],
+      "song": "Havana",
+      "artist": "Camila Cabello",
+      "year": 2017,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "truth-hurts",
+      "prompt": "Which Lizzo single opens with her announcing she just took a DNA test?",
+      "answer": "Truth Hurts",
+      "wrong": [
+        "Juice",
+        "Good as Hell",
+        "Tempo"
+      ],
+      "song": "Truth Hurts",
+      "artist": "Lizzo",
+      "year": 2019,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "all-about-bass",
+      "prompt": "Which 2014 hit declared itself all about the bass, no treble?",
+      "answer": "All About That Bass",
+      "wrong": [
+        "Fancy",
+        "Shake It Off",
+        "Rude"
+      ],
+      "song": "All About That Bass",
+      "artist": "Meghan Trainor",
+      "year": 2014,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "fancy-iggy",
+      "prompt": "The \u201cFancy\u201d video restages which nineties teen movie?",
+      "answer": "Clueless",
+      "wrong": [
+        "Mean Girls",
+        "10 Things I Hate About You",
+        "She\u2019s All That"
+      ],
+      "song": "Fancy",
+      "artist": "Iggy Azalea ft. Charli XCX",
+      "year": 2014,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "stressed-out",
+      "prompt": "Which band wishes they could turn back time to the good old days?",
+      "answer": "Twenty One Pilots",
+      "wrong": [
+        "Panic! at the Disco",
+        "AJR",
+        "Imagine Dragons"
+      ],
+      "song": "Stressed Out",
+      "artist": "Twenty One Pilots",
+      "year": 2015,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cant-stop-feeling",
+      "prompt": "\u201cCan\u2019t Stop the Feeling!\u201d was written for which animated film?",
+      "answer": "Trolls",
+      "wrong": [
+        "Sing",
+        "The Secret Life of Pets",
+        "Storks"
+      ],
+      "song": "Can\u2019t Stop the Feeling!",
+      "artist": "Justin Timberlake",
+      "year": 2016,
+      "era": "10s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "blinding-lights",
+      "prompt": "\u201cBlinding Lights\u201d is from which album?",
+      "answer": "After Hours",
+      "wrong": [
+        "Starboy",
+        "Dawn FM",
+        "Beauty Behind the Madness"
+      ],
+      "song": "Blinding Lights",
+      "artist": "The Weeknd",
+      "year": 2020,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "drivers-license",
+      "prompt": "In \u201cDrivers License,\u201d what color is the hair of the girl Olivia Rodrigo can\u2019t stop thinking about?",
+      "answer": "Blonde",
+      "wrong": [
+        "Red",
+        "Dark brown",
+        "Black"
+      ],
+      "song": "Drivers License",
+      "artist": "Olivia Rodrigo",
+      "year": 2021,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "anti-hero",
+      "prompt": "In \u201cAnti-Hero,\u201d what does Taylor Swift admit she is?",
+      "answer": "The problem",
+      "wrong": [
+        "The villain",
+        "The last to know",
+        "The quiet type"
+      ],
+      "song": "Anti-Hero",
+      "artist": "Taylor Swift",
+      "year": 2022,
+      "era": "20s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "flowers",
+      "prompt": "In \u201cFlowers,\u201d what can Miley Cyrus write in the sand?",
+      "answer": "Her name",
+      "wrong": [
+        "His name",
+        "A goodbye",
+        "Nothing at all"
+      ],
+      "song": "Flowers",
+      "artist": "Miley Cyrus",
+      "year": 2023,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "espresso",
+      "prompt": "What one word does Sabrina Carpenter use to describe herself in her 2024 smash?",
+      "answer": "Espresso",
+      "wrong": [
+        "Energy",
+        "Attitude",
+        "Amnesia"
+      ],
+      "song": "Espresso",
+      "artist": "Sabrina Carpenter",
+      "year": 2024,
+      "era": "20s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "as-it-was",
+      "prompt": "Whose voice opens \u201cAs It Was\u201d before the synths come in?",
+      "answer": "Harry Styles\u2019 goddaughter",
+      "wrong": [
+        "His mother",
+        "A sampled newsreader",
+        "His producer"
+      ],
+      "song": "As It Was",
+      "artist": "Harry Styles",
+      "year": 2022,
+      "era": "20s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "unholy",
+      "prompt": "Which singer features on Sam Smith\u2019s \u201cUnholy\u201d?",
+      "answer": "Kim Petras",
+      "wrong": [
+        "Normani",
+        "Charli XCX",
+        "Rina Sawayama"
+      ],
+      "song": "Unholy",
+      "artist": "Sam Smith & Kim Petras",
+      "year": 2022,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "good-4-u",
+      "prompt": "Which band was added to the writing credits of \u201cGood 4 U\u201d after release?",
+      "answer": "Paramore",
+      "wrong": [
+        "Fall Out Boy",
+        "My Chemical Romance",
+        "Blink-182"
+      ],
+      "song": "Good 4 U",
+      "artist": "Olivia Rodrigo",
+      "year": 2021,
+      "era": "20s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "not-like-us",
+      "prompt": "Who produced Kendrick Lamar\u2019s \u201cNot Like Us\u201d?",
+      "answer": "Mustard",
+      "wrong": [
+        "Metro Boomin",
+        "Sounwave",
+        "Hit-Boy"
+      ],
+      "song": "Not Like Us",
+      "artist": "Kendrick Lamar",
+      "year": 2024,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "texas-hold-em",
+      "prompt": "\u201cTexas Hold \u2019Em\u201d comes from which Beyonc\u00e9 album?",
+      "answer": "Cowboy Carter",
+      "wrong": [
+        "Renaissance",
+        "Lemonade",
+        "Black Is King"
+      ],
+      "song": "Texas Hold \u2019Em",
+      "artist": "Beyonc\u00e9",
+      "year": 2024,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "levitating",
+      "prompt": "\u201cLevitating\u201d is from which Dua Lipa album?",
+      "answer": "Future Nostalgia",
+      "wrong": [
+        "Radical Optimism",
+        "Dua Lipa",
+        "Club Future Nostalgia"
+      ],
+      "song": "Levitating",
+      "artist": "Dua Lipa",
+      "year": 2020,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "heat-waves",
+      "prompt": "\u201cHeat Waves\u201d came out in 2020. When did it finally top the US chart?",
+      "answer": "2022",
+      "wrong": [
+        "2020",
+        "2021",
+        "2023"
+      ],
+      "song": "Heat Waves",
+      "artist": "Glass Animals",
+      "year": 2020,
+      "era": "20s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "die-with-smile",
+      "prompt": "Which two artists duet on \u201cDie With a Smile\u201d?",
+      "answer": "Lady Gaga and Bruno Mars",
+      "wrong": [
+        "Dua Lipa and The Weeknd",
+        "Ariana Grande and Post Malone",
+        "Miley Cyrus and Bruno Mars"
+      ],
+      "song": "Die With a Smile",
+      "artist": "Lady Gaga & Bruno Mars",
+      "year": 2024,
+      "era": "20s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "birds-feather",
+      "prompt": "\u201cBirds of a Feather\u201d is from which Billie Eilish album?",
+      "answer": "Hit Me Hard and Soft",
+      "wrong": [
+        "Happier Than Ever",
+        "When We All Fall Asleep, Where Do We Go?",
+        "Guitar Songs"
+      ],
+      "song": "Birds of a Feather",
+      "artist": "Billie Eilish",
+      "year": 2024,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "snooze",
+      "prompt": "\u201cSnooze\u201d was a long-running hit from which SZA album?",
+      "answer": "SOS",
+      "wrong": [
+        "Ctrl",
+        "Lana",
+        "Z"
+      ],
+      "song": "Snooze",
+      "artist": "SZA",
+      "year": 2023,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "the-box",
+      "prompt": "Which 2020 number one is known for a squeaky noise the rapper makes with his own voice?",
+      "answer": "The Box",
+      "wrong": [
+        "Mood",
+        "Savage",
+        "Rockstar"
+      ],
+      "song": "The Box",
+      "artist": "Roddy Ricch",
+      "year": 2020,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "wap",
+      "prompt": "Which two rappers teamed up for 2020\u2019s most talked-about number one?",
+      "answer": "Cardi B and Megan Thee Stallion",
+      "wrong": [
+        "Nicki Minaj and Doja Cat",
+        "Cardi B and Nicki Minaj",
+        "Megan Thee Stallion and Saweetie"
+      ],
+      "song": "WAP",
+      "artist": "Cardi B ft. Megan Thee Stallion",
+      "year": 2020,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "say-so",
+      "prompt": "Which Doja Cat single was carried to number one by a TikTok dance?",
+      "answer": "Say So",
+      "wrong": [
+        "Kiss Me More",
+        "Woman",
+        "Streets"
+      ],
+      "song": "Say So",
+      "artist": "Doja Cat",
+      "year": 2020,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "kiss-me-more",
+      "prompt": "Who features on Doja Cat\u2019s \u201cKiss Me More\u201d?",
+      "answer": "SZA",
+      "wrong": [
+        "Ariana Grande",
+        "Megan Thee Stallion",
+        "Normani"
+      ],
+      "song": "Kiss Me More",
+      "artist": "Doja Cat",
+      "year": 2021,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "paint-town-red",
+      "prompt": "\u201cPaint the Town Red\u201d samples which Dionne Warwick classic?",
+      "answer": "Walk On By",
+      "wrong": [
+        "I Say a Little Prayer",
+        "Do You Know the Way to San Jose",
+        "Anyone Who Had a Heart"
+      ],
+      "song": "Paint the Town Red",
+      "artist": "Doja Cat",
+      "year": 2023,
+      "era": "20s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "dynamite-bts",
+      "prompt": "What made BTS\u2019s \u201cDynamite\u201d different from their earlier singles?",
+      "answer": "It was entirely in English",
+      "wrong": [
+        "It was entirely acoustic",
+        "It had no chorus",
+        "It was a cover"
+      ],
+      "song": "Dynamite",
+      "artist": "BTS",
+      "year": 2020,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "rain-on-me",
+      "prompt": "Which two artists duet on \u201cRain on Me\u201d?",
+      "answer": "Lady Gaga and Ariana Grande",
+      "wrong": [
+        "Dua Lipa and Miley Cyrus",
+        "Lady Gaga and Dua Lipa",
+        "Ariana Grande and Doja Cat"
+      ],
+      "song": "Rain on Me",
+      "artist": "Lady Gaga & Ariana Grande",
+      "year": 2020,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "break-my-heart",
+      "prompt": "\u201cBreak My Heart\u201d interpolates the guitar line from which INXS song?",
+      "answer": "Need You Tonight",
+      "wrong": [
+        "Never Tear Us Apart",
+        "New Sensation",
+        "Devil Inside"
+      ],
+      "song": "Break My Heart",
+      "artist": "Dua Lipa",
+      "year": 2020,
+      "era": "20s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "montero",
+      "prompt": "Which Lil Nas X single shares its title with his own first name?",
+      "answer": "Montero (Call Me by Your Name)",
+      "wrong": [
+        "Industry Baby",
+        "Old Town Road",
+        "Panini"
+      ],
+      "song": "Montero (Call Me by Your Name)",
+      "artist": "Lil Nas X",
+      "year": 2021,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "industry-baby",
+      "prompt": "Who features on Lil Nas X\u2019s \u201cIndustry Baby\u201d?",
+      "answer": "Jack Harlow",
+      "wrong": [
+        "Lil Baby",
+        "Megan Thee Stallion",
+        "Doja Cat"
+      ],
+      "song": "Industry Baby",
+      "artist": "Lil Nas X",
+      "year": 2021,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "first-class",
+      "prompt": "\u201cFirst Class\u201d samples which Fergie hit?",
+      "answer": "Glamorous",
+      "wrong": [
+        "Fergalicious",
+        "Big Girls Don\u2019t Cry",
+        "London Bridge"
+      ],
+      "song": "First Class",
+      "artist": "Jack Harlow",
+      "year": 2022,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "stay-laroi",
+      "prompt": "Who joins The Kid LAROI on \u201cStay\u201d?",
+      "answer": "Justin Bieber",
+      "wrong": [
+        "Post Malone",
+        "Shawn Mendes",
+        "Charlie Puth"
+      ],
+      "song": "Stay",
+      "artist": "The Kid LAROI & Justin Bieber",
+      "year": 2021,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "silk-sonic",
+      "prompt": "Silk Sonic is Bruno Mars together with whom?",
+      "answer": "Anderson .Paak",
+      "wrong": [
+        "Pharrell Williams",
+        "The Weeknd",
+        "Thundercat"
+      ],
+      "song": "Leave the Door Open",
+      "artist": "Silk Sonic",
+      "year": 2021,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "sour-album",
+      "prompt": "\u201cGood 4 U\u201d and \u201cDrivers License\u201d both come from which album?",
+      "answer": "Sour",
+      "wrong": [
+        "Guts",
+        "Olivia",
+        "Traitor"
+      ],
+      "song": "Good 4 U",
+      "artist": "Olivia Rodrigo",
+      "year": 2021,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "vampire",
+      "prompt": "Which Olivia Rodrigo single opens as a slow piano ballad and then accelerates?",
+      "answer": "Vampire",
+      "wrong": [
+        "Deja Vu",
+        "Traitor",
+        "Bad Idea Right?"
+      ],
+      "song": "Vampire",
+      "artist": "Olivia Rodrigo",
+      "year": 2023,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "about-damn-time",
+      "prompt": "Which Lizzo single declares that it is about damn time?",
+      "answer": "About Damn Time",
+      "wrong": [
+        "Juice",
+        "Truth Hurts",
+        "Special"
+      ],
+      "song": "About Damn Time",
+      "artist": "Lizzo",
+      "year": 2022,
+      "era": "20s",
+      "difficulty": "easy"
+    },
+    {
+      "id": "bad-habit",
+      "prompt": "Which 2022 sleeper hit regrets not knowing that you wanted him?",
+      "answer": "Bad Habit",
+      "wrong": [
+        "Heat Waves",
+        "As It Was",
+        "About Damn Time"
+      ],
+      "song": "Bad Habit",
+      "artist": "Steve Lacy",
+      "year": 2022,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lift-me-up",
+      "prompt": "Rihanna\u2019s \u201cLift Me Up\u201d was written for which film?",
+      "answer": "Black Panther: Wakanda Forever",
+      "wrong": [
+        "Barbie",
+        "Top Gun: Maverick",
+        "Elvis"
+      ],
+      "song": "Lift Me Up",
+      "artist": "Rihanna",
+      "year": 2022,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "cruel-summer",
+      "prompt": "Which Taylor Swift album track finally became a hit single four years after release?",
+      "answer": "Cruel Summer",
+      "wrong": [
+        "Karma",
+        "Lavender Haze",
+        "Willow"
+      ],
+      "song": "Cruel Summer",
+      "artist": "Taylor Swift",
+      "year": 2023,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "fortnight",
+      "prompt": "Who features on Taylor Swift\u2019s \u201cFortnight\u201d?",
+      "answer": "Post Malone",
+      "wrong": [
+        "Ed Sheeran",
+        "Bon Iver",
+        "The Weeknd"
+      ],
+      "song": "Fortnight",
+      "artist": "Taylor Swift",
+      "year": 2024,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "kill-bill",
+      "prompt": "Which SZA single describes a very calm plan to deal with an ex moving on?",
+      "answer": "Kill Bill",
+      "wrong": [
+        "Snooze",
+        "Good Days",
+        "Nobody Gets Me"
+      ],
+      "song": "Kill Bill",
+      "artist": "SZA",
+      "year": 2022,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "creepin",
+      "prompt": "\u201cCreepin\u2019\u201d is a remake of which Mario Winans hit?",
+      "answer": "I Don\u2019t Wanna Know",
+      "wrong": [
+        "Never Really Was",
+        "Don\u2019t Know",
+        "Enjoy Yourself"
+      ],
+      "song": "Creepin\u2019",
+      "artist": "Metro Boomin, The Weeknd & 21 Savage",
+      "year": 2022,
+      "era": "20s",
+      "difficulty": "hard"
+    },
+    {
+      "id": "calm-down",
+      "prompt": "Which Nigerian singer\u2019s \u201cCalm Down\u201d became a global hit with Selena Gomez?",
+      "answer": "Rema",
+      "wrong": [
+        "Burna Boy",
+        "Wizkid",
+        "Ayra Starr"
+      ],
+      "song": "Calm Down",
+      "artist": "Rema & Selena Gomez",
+      "year": 2022,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "luke-fast-car",
+      "prompt": "Luke Combs had a 2023 smash with a cover of which eighties song?",
+      "answer": "Fast Car",
+      "wrong": [
+        "The Boys of Summer",
+        "Free Fallin\u2019",
+        "Angel from Montgomery"
+      ],
+      "song": "Fast Car",
+      "artist": "Luke Combs",
+      "year": 2023,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "stick-season",
+      "prompt": "Which Vermont singer-songwriter broke through with \u201cStick Season\u201d?",
+      "answer": "Noah Kahan",
+      "wrong": [
+        "Zach Bryan",
+        "Hozier",
+        "Mt. Joy"
+      ],
+      "song": "Stick Season",
+      "artist": "Noah Kahan",
+      "year": 2022,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "beautiful-things",
+      "prompt": "Which 2024 breakout swings from a hushed verse into a shouted chorus about not losing her?",
+      "answer": "Beautiful Things",
+      "wrong": [
+        "Lose Control",
+        "Stick Season",
+        "Greedy"
+      ],
+      "song": "Beautiful Things",
+      "artist": "Benson Boone",
+      "year": 2024,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "lose-control-swims",
+      "prompt": "Which singer had a long-running 2023 hit with \u201cLose Control\u201d?",
+      "answer": "Teddy Swims",
+      "wrong": [
+        "Benson Boone",
+        "Noah Kahan",
+        "Dean Lewis"
+      ],
+      "song": "Lose Control",
+      "artist": "Teddy Swims",
+      "year": 2023,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "good-luck-babe",
+      "prompt": "Which Chappell Roan single warns that you will be thinking of her when you kiss him?",
+      "answer": "Good Luck, Babe!",
+      "wrong": [
+        "Pink Pony Club",
+        "HOT TO GO!",
+        "Red Wine Supernova"
+      ],
+      "song": "Good Luck, Babe!",
+      "artist": "Chappell Roan",
+      "year": 2024,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "hot-to-go",
+      "prompt": "Which Chappell Roan song has the crowd spell out letters with their arms?",
+      "answer": "HOT TO GO!",
+      "wrong": [
+        "Pink Pony Club",
+        "Femininomenon",
+        "Casual"
+      ],
+      "song": "HOT TO GO!",
+      "artist": "Chappell Roan",
+      "year": 2023,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bar-song",
+      "prompt": "\u201cA Bar Song (Tipsy)\u201d interpolates a 2004 hit by whom?",
+      "answer": "J-Kwon",
+      "wrong": [
+        "Chingy",
+        "Petey Pablo",
+        "Juvenile"
+      ],
+      "song": "A Bar Song (Tipsy)",
+      "artist": "Shaboozey",
+      "year": 2024,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "what-was-i-made",
+      "prompt": "Which Barbie soundtrack song won the Oscar for Best Original Song?",
+      "answer": "What Was I Made For?",
+      "wrong": [
+        "Dance the Night",
+        "I\u2019m Just Ken",
+        "Barbie World"
+      ],
+      "song": "What Was I Made For?",
+      "artist": "Billie Eilish",
+      "year": 2023,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "im-just-ken",
+      "prompt": "Who sings \u201cI\u2019m Just Ken\u201d in the Barbie film?",
+      "answer": "Ryan Gosling",
+      "wrong": [
+        "Simu Liu",
+        "Michael Cera",
+        "Will Ferrell"
+      ],
+      "song": "I\u2019m Just Ken",
+      "artist": "Ryan Gosling",
+      "year": 2023,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "please-please",
+      "prompt": "Which Sabrina Carpenter single asks him please not to embarrass her?",
+      "answer": "Please Please Please",
+      "wrong": [
+        "Espresso",
+        "Taste",
+        "Feather"
+      ],
+      "song": "Please Please Please",
+      "artist": "Sabrina Carpenter",
+      "year": 2024,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "water-tyla",
+      "prompt": "Which South African singer broke through globally with \u201cWater\u201d?",
+      "answer": "Tyla",
+      "wrong": [
+        "Ayra Starr",
+        "Tems",
+        "Libianca"
+      ],
+      "song": "Water",
+      "artist": "Tyla",
+      "year": 2023,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "save-your-tears",
+      "prompt": "Which Weeknd single followed \u201cBlinding Lights\u201d off the same album?",
+      "answer": "Save Your Tears",
+      "wrong": [
+        "Take My Breath",
+        "Sacrifice",
+        "Is There Someone Else?"
+      ],
+      "song": "Save Your Tears",
+      "artist": "The Weeknd",
+      "year": 2020,
+      "era": "20s",
+      "difficulty": "medium"
+    },
+    {
+      "id": "luther-gnx",
+      "prompt": "Which SZA collaboration appears on Kendrick Lamar\u2019s GNX?",
+      "answer": "Luther",
+      "wrong": [
+        "All the Stars",
+        "Doves in the Wind",
+        "Kiss Me More"
+      ],
+      "song": "Luther",
+      "artist": "Kendrick Lamar & SZA",
+      "year": 2024,
+      "era": "20s",
+      "difficulty": "medium"
+    }
   ]
 }

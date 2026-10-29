@@ -57,6 +57,20 @@ const thinnest = Math.min(...ERAS.map((e) => perEra[e]));
 
 console.log(`bank v${bank.version}: ${bank.questions.length} questions`);
 console.log(ERAS.map((e) => `${e}=${perEra[e]}`).join("  "));
+console.log(DIFFS.map((d) => `${d}=${bank.questions.filter((q) => q.difficulty === d).length}`).join("  "));
+
+// Not an error: the dealer skips a song it has already used this round. Worth
+// printing so it stays a deliberate choice rather than an accident.
+const songs = new Map();
+bank.questions.forEach((q) => {
+  const key = `${q.song} — ${q.artist}`;
+  songs.set(key, (songs.get(key) || 0) + 1);
+});
+const repeated = [...songs.entries()].filter(([, n]) => n > 1);
+if (repeated.length) {
+  console.log(`\n${repeated.length} song(s) carry more than one question:`);
+  repeated.forEach(([key, n]) => console.log(`  ${n}x ${key}`));
+}
 
 if (thinnest < 5) {
   problems.push(`thinnest era has only ${thinnest} questions; a 20-question round needs 4 per era`);
