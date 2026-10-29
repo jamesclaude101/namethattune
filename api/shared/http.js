@@ -21,8 +21,18 @@ function fail(context, status, message) {
   json(context, status, { error: message });
 }
 
+/**
+ * Azure Static Web Apps consumes the Authorization header in its own auth
+ * pipeline and never forwards it to a managed function, so the game token
+ * travels in a header of its own. The Authorization fallback keeps this
+ * working against a standalone Function App or a local `func start`.
+ */
 function bearer(req) {
-  const header = req.headers && (req.headers.authorization || req.headers.Authorization);
+  const headers = req.headers || {};
+  const custom = headers["x-game-token"] || headers["X-Game-Token"];
+  if (custom) return String(custom).trim();
+
+  const header = headers.authorization || headers.Authorization;
   if (!header) return null;
   const match = /^Bearer\s+(.+)$/i.exec(String(header).trim());
   return match ? match[1].trim() : null;

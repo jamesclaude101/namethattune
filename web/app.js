@@ -83,7 +83,13 @@ function myToken() {
 async function call(method, path, payload) {
   var opts = { method: method, headers: {} };
   var tok = myToken();
-  if (tok) opts.headers["Authorization"] = "Bearer " + tok;
+  if (tok) {
+    // Static Web Apps swallows Authorization before the API sees it, so the
+    // token rides in its own header. Both are sent: the fallback matters if
+    // the API is ever hosted somewhere that passes Authorization through.
+    opts.headers["X-Game-Token"] = tok;
+    opts.headers["Authorization"] = "Bearer " + tok;
+  }
   if (payload !== undefined) {
     opts.headers["Content-Type"] = "application/json";
     opts.body = JSON.stringify(payload);
