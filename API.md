@@ -8,7 +8,12 @@ another. Nothing about the rules lives in the client.
 **Conventions**
 
 - JSON in, JSON out. No cookies, no sessions.
-- Auth is `Authorization: Bearer <token>`. Two kinds of token:
+- Auth is the header `X-Game-Token: <token>`. **Not** `Authorization` — Azure
+  Static Web Apps consumes that header in its own auth pipeline and never
+  forwards it to a managed function, so a token sent that way arrives as
+  nothing and every call 403s. The API still accepts
+  `Authorization: Bearer <token>` as a fallback for hosting that passes it
+  through. Two kinds of token:
   - **host token** — returned once when the room is created. Drives the game.
   - **player token** — returned once when a player joins. Submits answers.
 - Errors are `{ "error": "human readable sentence" }` with a real status code.
