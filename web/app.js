@@ -449,12 +449,26 @@ function renderPlayerReveal() {
   v.textContent = ok ? (you.streak >= 3 ? "Streak ×" + you.streak : "Correct") : "Nope";
 
   text(node, "pts", ok ? "+" + you.lastPoints : "+0");
-  text(node, "correct", r.reveal
-    ? "The answer was " + r.reveal.correctText + " — “" + r.reveal.song + "”, " + r.reveal.artist
-    : "");
+  text(node, "correct", r.reveal ? revealLine(r.reveal) : "");
   text(node, "score", you.score || 0);
   text(node, "place", ordinal(placeOf(r, you.id)));
   return node;
+}
+
+/**
+ * "The answer was Bastille — “Pompeii”, Bastille" stutters, and plenty of
+ * questions ask for the artist or the title itself. Name the song and the
+ * artist only where they are not already the answer.
+ */
+function revealLine(rev) {
+  var same = function (a, b) {
+    return String(a).toLowerCase() === String(b).toLowerCase();
+  };
+  var bits = [];
+  if (!same(rev.correctText, rev.song)) bits.push("“" + rev.song + "”");
+  if (!same(rev.correctText, rev.artist)) bits.push(rev.artist);
+  return "The answer was " + rev.correctText +
+    (bits.length ? " — " + bits.join(", ") : "");
 }
 
 function renderPlayerFinal() {
