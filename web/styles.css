@@ -91,11 +91,11 @@ button:focus-visible, .input:focus-visible { outline: 2px solid var(--gold); out
 .hero h1 em { font-style: normal; color: var(--hot); }
 
 /* Lucy's tag, sprayed up and to the left of the title.
-   It sits in its own line box rather than being positioned over the words:
-   the rotated lettering reaches about 0.95em above and below its centre, so a
-   2.1 line-height contains it at every width and it can never land on the
-   eyebrow above or the title below, however narrow the phone. */
-.titlewrap { --tagsize: clamp(21px, 5.6vw, 36px); display: inline-block; }
+   On a phone there is no room to be clever: the tag takes a line of its own,
+   tilted gently, and the 2.1 line-height swallows the rotation so it cannot
+   reach the eyebrow above or the title below at any width. The wide-screen
+   rules further down take over once there is empty corner to spray into. */
+.titlewrap { --tagsize: clamp(21px, 5.6vw, 36px); position: relative; display: inline-block; }
 .spraytag {
   display: block;
   width: max-content;
@@ -108,7 +108,25 @@ button:focus-visible, .input:focus-visible { outline: 2px solid var(--gold); out
   transform: rotate(-15deg);
   filter: url(#spray);
 }
-.view.host .titlewrap { --tagsize: clamp(30px, 4.6vw, 54px); }
+/* Once there is empty room either side of the title, the tag stops being a
+   polite line of its own and becomes what it should be: sprayed across the
+   corner, big and steep, swinging down to the left of "Name" where no text
+   lives. It is lifted out of the flow here, so the clearance is held by the
+   numbers below rather than by a line box — see the rotated-quad check in
+   the commit that introduced it. */
+@media (min-width: 900px) {
+  .titlewrap { --tagsize: clamp(46px, 6.4vw, 78px); }
+  .spraytag {
+    position: absolute;
+    right: calc(100% - 0.72em);
+    bottom: calc(100% + 0.62em);
+    margin: 0;
+    line-height: 1;
+    transform: rotate(-36deg);
+    transform-origin: 100% 100%;
+    text-shadow: 0 0 16px rgba(255, 46, 136, 0.55), 0 0 40px rgba(255, 46, 136, 0.28);
+  }
+}
 .hero.tight h1 { font-size: clamp(32px, 9vw, 44px); }
 .view.host .hero h1 { font-size: clamp(56px, 9vw, 104px); }
 .lede { color: var(--muted); max-width: 46ch; margin: 0; }
