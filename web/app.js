@@ -27,6 +27,7 @@ var S = {
   settings: { eras: ERAS.slice(), questionCount: 10, clockSeconds: 20 },
   seenPlayers: [],
   pendingChoice: null, // locked in locally before the server confirms
+  painted: null,       // signature of what the DOM currently shows
   error: null
 };
 
@@ -178,7 +179,29 @@ function applyRoom(room) {
     if (room.phase === "question") S.pendingChoice = null;
   }
 
-  render();
+  // Rebuilding the view on every poll yanks the node out from under a finger
+  // that is mid-press on an answer tile: the pointer goes down on a button
+  // that no longer exists when it comes up, no click fires, and the player is
+  // scored zero for a question they answered. So repaint only when something
+  // other than the clock changed. The countdown is unaffected — paintClock
+  // runs on its own interval and reads S.room and S.anchor directly.
+  if (viewSignature() !== S.painted) render();
+}
+
+/**
+ * Everything the current screen draws, except the clock. Deliberately not a
+ * hash of the whole room: serverNow, msRemaining and questionStartedAt move
+ * every poll and would make this always differ.
+ */
+function viewSignature() {
+  var r = S.room;
+  var head = [screenName(), S.pendingChoice, S.error, S.joinError || null];
+  if (!r) return JSON.stringify(head);
+  return JSON.stringify(head.concat([
+    r.phase, r.index, r.total, r.answeredCount,
+    r.question && r.question.prompt, r.question && r.question.choices,
+    r.reveal, r.leaderboard || null, r.players, r.you || null
+  ]));
 }
 
 /* ----------------------------------------------------------------- screens */
@@ -228,6 +251,7 @@ function render() {
   view.classList.toggle("host", S.mode === "host");
   view.innerHTML = "";
   view.appendChild(node);
+  S.painted = viewSignature();
 
   if (S.room && S.room.phase === "question") {
     paintClock();
