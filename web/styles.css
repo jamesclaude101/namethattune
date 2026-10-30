@@ -90,32 +90,34 @@ button:focus-visible, .input:focus-visible { outline: 2px solid var(--gold); out
 .hero h1 { font-size: clamp(40px, 11vw, 68px); line-height: 0.95; }
 .hero h1 em { font-style: normal; color: var(--hot); }
 
-/* Lucy's tag, sprayed up and to the left of the title.
-   On a phone there is no room to be clever: the tag takes a line of its own,
-   tilted gently, and the 2.1 line-height swallows the rotation so it cannot
-   reach the eyebrow above or the title below at any width. The wide-screen
-   rules further down take over once there is empty corner to spray into. */
-.titlewrap { --tagsize: clamp(21px, 5.6vw, 36px); position: relative; display: inline-block; }
+/* Lucy's tag, sprayed up and to the left of the title. Same lettering, same
+   36 degrees, same size against the heading at every width — only the way it
+   is held differs. A phone has no empty corner to spray into, so there the
+   tag takes a line of its own and the hero gives up the room. The rotated
+   word reaches about 1.32em above and below its centre, which a 2.8
+   line-height contains, so it cannot touch the eyebrow or the title. */
+.titlewrap { --tagsize: clamp(42px, 11.5vw, 72px); position: relative; display: inline-block; }
 .spraytag {
   display: block;
   width: max-content;
-  margin: calc(var(--tagsize) * 0.3) 0 calc(var(--tagsize) * 0.45) calc(var(--tagsize) * -0.35);
+  margin: 0 0 calc(var(--tagsize) * 0.08);
   font-family: var(--tag);
   font-size: var(--tagsize);
-  line-height: 2.1;
+  line-height: 2.8;
   color: var(--hot);
-  text-shadow: 0 0 10px rgba(255, 46, 136, 0.5), 0 0 22px rgba(255, 46, 136, 0.22);
-  transform: rotate(-15deg);
+  text-shadow: 0 0 12px rgba(255, 46, 136, 0.55), 0 0 30px rgba(255, 46, 136, 0.26);
+  transform: rotate(-36deg);
   filter: url(#spray);
 }
-/* Once there is empty room either side of the title, the tag stops being a
-   polite line of its own and becomes what it should be: sprayed across the
-   corner, big and steep, swinging down to the left of "Name" where no text
-   lives. It is lifted out of the flow here, so the clearance is held by the
-   numbers below rather than by a line box — see the rotated-quad check in
-   the commit that introduced it. */
+/* Once there is empty corner either side of the title, the tag stops taking a
+   line of its own and swings across that corner instead, down to the left of
+   "Name" where no text lives. It is out of the flow here, so the clearance is
+   held by the offsets below rather than by a line box — they were solved
+   against the rotated quad, not its bounding box. */
 @media (min-width: 900px) {
-  .titlewrap { --tagsize: clamp(46px, 6.4vw, 78px); }
+  /* The floor is near the size the in-flow tag reaches just below this
+     breakpoint, so crossing it changes the tag's pose, not its weight. */
+  .titlewrap { --tagsize: clamp(66px, 6.4vw, 78px); }
   .spraytag {
     position: absolute;
     right: calc(100% - 0.72em);
