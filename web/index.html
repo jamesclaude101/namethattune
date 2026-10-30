@@ -6,10 +6,19 @@
 <title>Name That Tune</title>
 <meta name="description" content="Lyrics trivia from 1985 to now. One screen, up to six phones.">
 <meta name="theme-color" content="#150C22">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&family=Space+Mono:wght@700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&family=Permanent+Marker&family=Space+Mono:wght@700&display=swap">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<!-- Roughens the edges of the spray tag. A browser that ignores it just draws
+     clean marker lettering, which is a fine place to land. -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <filter id="spray">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="7" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.2" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
 
 <main id="view" class="view"></main>
 
@@ -17,7 +26,10 @@
   <section class="pane center">
     <div class="hero">
       <p class="eyebrow">Lyrics trivia &middot; 1985 to now</p>
-      <h1>Name <em>That</em> Tune</h1>
+      <div class="titlewrap">
+        <span class="spraytag">Lucy&rsquo;s</span>
+        <h1>Name <em>That</em> Tune</h1>
+      </div>
       <p class="lede">You know the words. The question is whether you know you know them.</p>
     </div>
     <div class="stack">
